@@ -4,10 +4,4 @@
 
 [build.environment]
   JEKYLL_ENV = "production"
-
-[[redirects]]
-  from = "https://khinshankhan.com/*"
-  to = "https://www.khinshankhan.com/:splat"
-  status = 301
-  force = true
   
