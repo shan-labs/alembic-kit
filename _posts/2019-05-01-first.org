@@ -1,0 +1,34 @@
+#+TITLE: First
+#+LAYOUT: post
+#+CATEGORIES: intro volatile
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+
+*** Mini Prelude
+Well I guess to start with, it may be important to note that this post was actually backdated a little. This backdating doesn't have
+malicious intents like [[https://www.lumendatabase.org/blog_entries/800][some companies do]], it's meant to keep this post in the beginning as it outlines how my website will work.
+
+*** Details
+To start with, posts will usually have the following meta data: =title=, =layout=, =feature_image=, and =categories=. The rest of the meta isn't
+ particularly relevant, but available regardless. Title and date should be rater self-explanatory. Let's zero in on the most important
+meta data: categories. Next paragraph to isolate this information for the readers!
+
+Categories are probably the most important and possibly most convoluted mechanism in this site for the users. To start with, every post
+ will have at least one category (I set up the python "backend" to yell at me if I ever forget). These categories will attempt to be
+descriptive of the post. But in addition, I'm going idea that categories will show the "status of the post". That is to say, a category
+ like "discussion" will mean the post has a comment section includes (once I implement comments, you'll see that on almost every post).
+Here's a mini outline of what I'm going for:
+
+**** Key Category System
+These are just alphabetically arranged, no hidden meaning.
+- "analysis": a logical breakdown and discussion of implications for certain topics (usually technology).
+- "discretion": I wouldn't recommend reading this in front of a younger audience (these may pop up in literature that I choose to discuss).
+- "discussion": some sort of comment interface is active for the post.
+- "lesson": a post designed to teach rather than discuss.
+- "notes": the post is either derived from my classnotes or personal life.
+- "thoughts": my 2 cents about a topic, probably opinionated, so no need to yell at me.
+- "volatile": means that the post is subject to editing (well, all posts are, but this category means the content can change. Others
+would change for small typos or errors... unless I misunderstand and convey incorrect information, in which case I'll make it apparent
+ using strikethroughs or something.)
+
+*** Final Note
+Finally, I'll try to eventually maintain /at least/ weekly posts (hopefully I'll be posting more than once a week), but I'm not sure how long it'll take me to reach that level. For now, I'll be posting whenever is convenient.
