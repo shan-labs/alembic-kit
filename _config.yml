@@ -19,6 +19,21 @@ plugins:
 - jemoji
 - jekyll-org
 
+# Gem Settings
+author: Khinshan Khan # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Khinshan Khan # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://github.com/kkhan01
+# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
+# commonmark:
+  # options: ["SMART", "FOOTNOTES"]
+  # extensions: ["strikethrough", "autolink", "table"]
+
+# Pagination
+paginate: 5
+paginate_path: blog/page/:num
+
 # Site settings
 url: 'https://khinshankhan.com'
 baseurl: ''
@@ -26,10 +41,6 @@ title: 'Khinshan Khan'
 description: 'This is my new website'
 permalink: pretty
 logo: "/assets/imgs/works/k_logo.jpeg"
-
-# Pagination
-paginate: 5
-paginate_path: blog/page/:num
 
 # Header nav
 navigation_header:
