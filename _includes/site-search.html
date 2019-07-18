@@ -33,7 +33,7 @@
         <li class="item  item--result">
           <article class="article  typeset">
             <h4><a href="${item.url}">${item.title}</a></h4>
-            <p>${item.content}</p>
+            <p>${item.content.split(" ").splice(0,43).join(" ") + ((item.content.split(" ").length < 43) ? "" : "...")}</p>
           </article>
         </li>`;
    }).join('');
