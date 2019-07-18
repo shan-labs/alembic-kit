@@ -80,3 +80,7 @@ favicons:
   180: '/assets/imgs/works/k_logo.jpeg'
   512: '/assets/imgs/works/k_logo.jpeg'
   1024: '/assets/imgs/works/k_logo.jpeg'
+
+social_links:
+  GitHub: https://github.com/kkhan01
+  RSS: /feed.xml
