@@ -54,3 +54,14 @@ collections:
     feature_text: |
       Welcome to my blog
     feature_image: "https://picsum.photos/2560/600?image=866"
+
+# Favicons are also used in the manifest file. Syntax is 'size: path'
+favicons:
+  16: '/assets/imgs/works/k_logo.jpeg'
+  32: '/assets/imgs/works/k_logo.jpeg'
+  96: '/assets/imgs/works/k_logo.jpeg'
+  120: '/assets/imgs/works/k_logo.jpeg'
+  144: '/assets/imgs/works/k_logo.jpeg'
+  180: '/assets/imgs/works/k_logo.jpeg'
+  512: '/assets/imgs/works/k_logo.jpeg'
+  1024: '/assets/imgs/works/k_logo.jpeg'
