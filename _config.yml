@@ -50,6 +50,10 @@ navigation_header:
   url: /about/
 - title: Blog
   url: /blog/
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
 
 # Footer nav
 navigation_footer:
