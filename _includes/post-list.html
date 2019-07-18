@@ -6,7 +6,7 @@
       <article class="article  article--post">
 
         <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
-        {% include post-meta.html %}
+        {% include post-meta.html %} {% include read-time.html %}
         {{ page.content | truncatewords: 45 }}
       </article>
     </li>
