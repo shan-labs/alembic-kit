@@ -20,16 +20,16 @@ plugins:
 - jekyll-org
 
 # Site settings
-url: 'https://mydomain.com'
+url: 'https://khinshankhan.com'
 baseurl: ''
-title: 'My website'
+title: 'Khinshan Khan'
 description: 'This is my new website'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: "/assets/imgs/works/k_logo.jpeg"
 
 # Pagination
 paginate: 5
-paginate_path: blog/page:num
+paginate_path: blog/page/:num
 
 # Header nav
 navigation_header:
