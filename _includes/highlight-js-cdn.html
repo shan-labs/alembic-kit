@@ -1,0 +1,26 @@
+<style>
+ .hljs {
+   display: block !important;
+   overflow-x: auto !important;
+   padding: 0.5em !important;
+   background: #2E3440 !important;
+   background-color: rgb(46, 52, 64) !important;
+ }
+
+ .hljs, .hljs-subst {
+   color: #D8DEE9 !important;
+ }
+</style>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/nord.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/lisp.min.js"></script>
+
+<script>
+ document.addEventListener('DOMContentLoaded', (event) => {
+   document.querySelectorAll('pre').forEach((block) => {
+     hljs.highlightBlock(block);
+   });
+ });
+</script>
