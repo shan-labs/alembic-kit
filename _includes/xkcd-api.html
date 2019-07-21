@@ -1,0 +1,27 @@
+<figure class="figure  figure--center">
+  <img class="image" id="404img" src="" alt="">
+</figure>
+
+<script>
+ const getData = (url) => {
+   return fetch("https://cors-anywhere.herokuapp.com/" + url)
+     .then (res => res.json())
+     .then(data => data)
+     .catch(error => error => ({ error }))
+ }
+
+ const getComic = () => {
+   return getData('https://xkcd.com/info.0.json')
+     .then(response => {
+       let num = Math.floor(Math.random() * response.num);
+       getData("https://xkcd.com/" + num + "/info.0.json")
+         .then(res => {
+           document.getElementById("404img").src=res.img;
+         })
+         .catch(error => error => ({ error }));
+     })
+     .catch(error => error => ({ error }))
+ }
+
+ getComic();
+</script>
