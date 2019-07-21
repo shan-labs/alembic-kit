@@ -1,6 +1,16 @@
+<h6 id="thonk">
+  Bypassing CORS and gaining XKCD access...
+</h6>
+
+<br>
+
 <figure class="figure  figure--center">
   <img class="image" id="404img" src="" alt="">
 </figure>
+
+<br>
+
+[Click Here to Return to Safety]({{ site.baseurl }} "Home")
 
 <script>
  const getData = (url) => {
@@ -10,18 +20,26 @@
      .catch(error => error => ({ error }))
  }
 
- const getComic = () => {
+ const getComic = (num) => {
+   getData("https://xkcd.com/" + num + "/info.0.json")
+     .then(res => {
+       document.getElementById("404img").src=res.img;
+       document.getElementById("404img").alt=num;
+       document.getElementById("thonk").innerHTML="Enjoy this lovely XKCD comic as you wait.";
+     })
+     .catch(error => error => ({ error }));
+ }
+
+ const getRandomComic = () => {
    return getData('https://xkcd.com/info.0.json')
      .then(response => {
        let num = Math.floor(Math.random() * response.num);
-       getData("https://xkcd.com/" + num + "/info.0.json")
-         .then(res => {
-           document.getElementById("404img").src=res.img;
-         })
-         .catch(error => error => ({ error }));
+       getComic(num);
      })
      .catch(error => error => ({ error }))
  }
 
- getComic();
+ getRandomComic();
 </script>
+
+<noscript>Sorry, but to view the XKCD comic, you need javascript enabled.</noscript>
