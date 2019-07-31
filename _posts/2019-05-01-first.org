@@ -4,7 +4,6 @@
 #+liquid: enabled
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 
-*** Mini Prelude
 Well I guess to start with, it may be important to note that this post was actually backdated a little. This backdating doesn't have
 malicious intents like [[https://www.lumendatabase.org/blog_entries/800][some companies do]], it's meant to keep this post in the beginning as it outlines how my website will work.
 
