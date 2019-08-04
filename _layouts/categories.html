@@ -7,11 +7,16 @@ layout: default
 <main class="main  container">
 
   <div class="content">
-    {% include site-search.html %}
-    <hr>
+
     <article class="article  article--page  typeset">
 
-      <h1>{{ page.title }}</h1>
+      <h1>Search</h1>
+
+      {% include site-search.html %}
+
+      <hr style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000 50%);">
+
+      <h1>Categories</h1>
 
       {{ content }}
 
