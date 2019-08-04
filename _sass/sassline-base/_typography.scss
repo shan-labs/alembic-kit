@@ -41,10 +41,10 @@ a {
     background-repeat: repeat-x;
     background-size: 100% 0.15rem;
     // useful for when no background img
-    // text-shadow: 0.1rem 0 $backgroundColour,
-    //              0.15rem 0 $backgroundColour,
-    //             -0.1rem 0 $backgroundColour,
-    //             -0.15rem 0 $backgroundColour;
+    text-shadow: 0.1rem 0 $backgroundColour,
+                 0.15rem 0 $backgroundColour,
+                -0.1rem 0 $backgroundColour,
+                -0.15rem 0 $backgroundColour;
 
     &:hover, &:active, &:focus {
       background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,$hoverColour 50%);
