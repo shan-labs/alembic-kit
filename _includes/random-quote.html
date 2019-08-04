@@ -1,0 +1,16 @@
+<script>
+ const randomQuote = () =>{
+   const QUOTES = {{site.data.quotes | jsonify}};
+   return QUOTES [Math.floor (Math.random() * QUOTES.length)];
+ }
+
+ if(document.getElementById("randomquote") != null){
+   const quote = randomQuote();
+   document.getElementById("randomquote").innerHTML = `<p>${quote.quote}<br>--${quote.name}</p>`;
+ }
+
+ if(document.getElementById("welcome-to-my-blog") != null){
+   const quote = randomQuote();
+   document.getElementById("welcome-to-my-blog").innerHTML = `<p>${quote.quote}<br>--${quote.name}</p>`;
+ }
+</script>
