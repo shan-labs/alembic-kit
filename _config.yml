@@ -54,6 +54,8 @@ navigation_header:
   url: /blog/
 - title: Search
   url: /search/
+- title: Resume
+  url: https://kkhan01.github.io/resume/resume.pdf
 
 # Footer nav
 navigation_footer:
