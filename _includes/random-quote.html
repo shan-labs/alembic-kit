@@ -11,6 +11,9 @@
 
  if(document.getElementById("welcome-to-my-blog") != null){
    const quote = randomQuote();
-   document.getElementById("welcome-to-my-blog").innerHTML = `<p>${quote.quote}<br>--${quote.name}</p>`;
+   document.getElementById("welcome-to-my-blog").innerHTML =
+     `<p class="whitetext highlighted">${quote.quote}
+        <br>
+        --${quote.name}</p>`;
  }
 </script>
