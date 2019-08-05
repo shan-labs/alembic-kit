@@ -1,7 +1,7 @@
 #+TITLE: Blogging
 #+LAYOUT: post
 #+CATEGORIES: blogging jekyll netlify gh-pages tech
-#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+feature_image: https://picsum.photos/1300/400?image=989
 
 Choosing how your blog will live, either for the first time or the twentieth time, can be overwhelming. Luckily we've got posts like this one: users sharing their experience to help you!
 
