@@ -816,11 +816,12 @@ function animate() {
   render();
 }
 
+// customize this for size
 function makeCanvasFullScreen(canvas) {
   var b = document.body;
   var d = document.documentElement;
   fullw = Math.max(b.clientWidth, b.scrollWidth, d.scrollWidth, d.clientWidth);
-  fullh = Math.max(b.clientHeight, b.scrollHeight, d.scrollHeight, d.clientHeight);
+  fullh = screen.height / 3; //Math.max(b.clientHeight, b.scrollHeight, d.scrollHeight, d.clientHeight);
   canvas.width = fullw;
   canvas.height = fullh;
 }
