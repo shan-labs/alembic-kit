@@ -6,6 +6,8 @@ layout: default
 
 <main class="main  container">
 
+  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
+
   <div class="content">
 
     <article class="article  article--page  typeset">
@@ -25,8 +27,6 @@ layout: default
     {% include post-categories.html %}
 
   </div>
-
-  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
 
 </main>
 
