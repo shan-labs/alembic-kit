@@ -1,0 +1,3 @@
+#+TITLE: Personal Site [[https://app.netlify.com/sites/kkhan01-site/deploys][https://api.netlify.com/api/v1/badges/d0ce6e43-bb44-46f4-b4d8-e896d414ee02/deploy-status.png]]
+#+AUTHOR: Khinshan Khan
+#+STARTIP: overview
