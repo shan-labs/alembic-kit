@@ -2,5 +2,11 @@
 title: false
 styles: true
 ---
+.typeset {
+    .highlighted {
+        background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+    }
+}
 
 @import "alembic";
