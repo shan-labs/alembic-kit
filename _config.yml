@@ -40,7 +40,7 @@ url: 'https://khinshankhan.com'
 baseurl: ''
 title: 'Khinshan Khan'
 description: 'This is my new website'
-permalink: pretty
+permalink: /:year/:month/:day/:title
 logo: "/assets/imgs/works/k_logo.jpeg"
 
 disqus: "kkhan01"
