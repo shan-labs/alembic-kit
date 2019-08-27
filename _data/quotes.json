@@ -25,6 +25,11 @@
   },
 
   {
+    "quote": "Yeokay",
+    "name": "Shan"
+  },
+
+  {
     "quote": "Emacs btw",
     "name": "Dreameh"
   },
@@ -37,5 +42,15 @@
   {
     "quote": "emacs btw",
     "name": "Aiden"
+  },
+
+  {
+    "quote": "... premature optimization is the root of all evil (or at least most of it) in programming.",
+    "name": "Donald Knuth"
+  },
+
+  {
+    "quote": "Hello",
+    "name": "SunriseM"
   }
 ]
