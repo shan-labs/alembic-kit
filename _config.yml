@@ -50,11 +50,11 @@ navigation_header:
 - title: Home
   url: /
 - title: About
-  url: /about/
+  url: /about
 - title: Blog
   url: /blog/
 - title: Search
-  url: /search/
+  url: /search
 - title: Resume
   url: https://kkhan01.github.io/resume/resume.pdf
 
