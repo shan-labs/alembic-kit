@@ -1,0 +1,11 @@
+#+TITLE: Fall 2019 Explanation
+#+layout: post
+#+categories: explanation blog
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+
+The time has come again: college restarted. This time around, I went crazy and overloaded for 21 credits and 2 graduate courses (myes, my college is nice enough to let me pursue the fun sounding courses). With parallel computing and big data and the 21 credits, I'm afraid I won't have time to blog... or will I?
+
+I decided to make one of those 21 credits CSCI 395.86, aka Open Source Software Development. In the course, there's a neat little aspect in addition to learning licenses, version control, (H)(F)OSS, cool talks, learning how to make money with open source and the sort: maintaining a blog for the class! Sadly, the blog will be under the class organization and will contain more systemic posts than free-for-all, random posts. However, I plan on syncing up the posts here... which may or may not be done punctually. I'll try to stay free-spirited and have posts outside the sync, but the class posts may actually be enjoyable... so look forward to it!
+
+Short post, but hopefully this will clarify next semester's layout.
