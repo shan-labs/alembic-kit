@@ -2,6 +2,9 @@
 title: false
 styles: true
 ---
+
+@import "alembic";
+
 .typeset {
     .highlighted {
         background-color: rgba(0,0,0,0.5);
@@ -9,4 +12,13 @@ styles: true
     }
 }
 
-@import "alembic";
+//text highlight
+.highlighted {
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+//white text
+.whitetext{
+  color: white !important;
+}

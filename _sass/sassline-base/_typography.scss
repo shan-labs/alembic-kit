@@ -52,7 +52,7 @@ a {
 
   // Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
   p {
-    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2.5, $below: 2, $breakpoint: all);
 
     font-feature-settings: 'kern', 'onum', 'liga';
   }
