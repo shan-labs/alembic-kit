@@ -5,17 +5,12 @@ styles: true
 
 @import "alembic";
 
-.typeset {
-    .highlighted {
-        background-color: rgba(0,0,0,0.5);
-	padding: 10px;
-    }
-}
-
 //text highlight
-.highlighted {
-  background-color: rgba(0,0,0,0.5);
-  padding: 10px;
+.typeset {
+  .highlighted {
+    background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+  }
 }
 
 //white text
