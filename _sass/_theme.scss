@@ -6,7 +6,6 @@ body {
   display: flex;
   @include flex-direction(column);
   overflow-x: hidden;
-  // background-image: url('/assets/imgs/works/inverted_debut_light.png');
 }
 
 .container {
