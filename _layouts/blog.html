@@ -8,17 +8,25 @@ layout: default
 
   <div class="content">
 
+    <div class="user-toggle">
+      <div role="status" class="[ visually-hidden ][ js-mode-status ]"></div>
+      <button class="[ toggle-button ] [ js-mode-toggle ]" style="float:right;">
+        <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
+        <span class="toggle-button__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
     <article class="article  article--page  typeset">
 
       {% if paginator.posts %}
-        {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-        <h1>{{ collectiondata.title }}</h1>
-        {{ collectiondata.description | markdownify }}
+      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+      <h1>{{ collectiondata.title }}</h1>
+      {{ collectiondata.description | markdownify }}
 
       {% else %}
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-        
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+
       {% endif %}
 
     </article>
