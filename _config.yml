@@ -39,7 +39,7 @@ paginate_path: blog/page/:num
 url: 'https://khinshankhan.com'
 baseurl: ''
 title: 'Khinshan Khan'
-description: 'This is my new website'
+description: "Shan's site: クリック コード サイクル！"
 permalink: /:year/:month/:day/:title
 logo: "/assets/imgs/works/k_logo.jpeg"
 
