@@ -86,12 +86,12 @@ body {
 }
 
 .footer {
-  background: $headingColour;
+  background: #24272C;
   color: $captionColour;
   a {
     color: $captionColour;
     &:hover {
-      color: $backgroundColour;
+      color: $hoverColour;
     }
   }
   .container {
