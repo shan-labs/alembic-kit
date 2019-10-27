@@ -39,7 +39,9 @@ paginate_path: blog/page/:num
 url: 'https://khinshankhan.com'
 baseurl: ''
 title: 'Khinshan Khan'
-description: "Shan's Site: クリック コード サイクル！"
+description: "Hello! This is my personal blog, where I share interesting news, books I'm reading, shows I'm watching, prominent projects, what I'm learning, and some musings. You can also find a plethora of information on myself, or at least sources to them.
+</br></br>
+ クリック コード サイクル！"
 permalink: /:year/:month/:day/:title
 logo: "/assets/imgs/works/k_logo.jpeg"
 
