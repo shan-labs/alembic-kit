@@ -18,3 +18,23 @@ styles: true
 .whitetext{
   color: white !important;
 }
+
+//spoiler
+// Inspired by: https://stackoverflow.com/a/41712116
+a[href='#spoiler'] {
+  color: #000;
+  text-decoration: none !important;
+  text-shadow: none !important;
+
+  background-image: none !important;
+  background-color: #000;
+  transition: color .1s, background-color .1s;
+  border-left: 2px solid $linkColour;
+  padding: 3px;
+
+  &:hover, &:active, &:focus {
+    cursor: auto;
+  color: white !important;
+  transition: color .5s ease-in-out;
+  }
+}
