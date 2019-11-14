@@ -1,0 +1,38 @@
+#+TITLE: week02
+#+layout: post
+#+categories: OSS-class feelings origin-story
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: false
+
+Open source contribution can definitely feel intimidating, but
+it should be doable nonetheless. I definitely agree with the
+advice that one should read a lot code before starting their
+contribution.
+
+To start off with, I was fairly intimidated by the
+[[https://icontribute.wordpress.com/how-to-contribute-to-open-source-without-coding/][long list]]
+of just the /ways/ to contribute to open source. I definitely
+like the idea of contributing code, but I think that's a goal for
+later down the road. It may be more reasonable to make my first
+contributions documentation related or bug related instead.
+
+A couple of projects that interest me are definitely the ones I
+use everyday: Emacs, Manjaro, Git, etectera. However, /because/ I
+use them everyday, I think they may serve as a challenge, since I
+sort of hold them on a pedestal in my mind.
+
+If I were to approach code, I think I'd prefer the project to be
+one of my stronger languages like lisp or python or C++, and I'd
+probably be willing to do it for a big project if I thought the
+project's standards and flow seemed natural to follow. A meetup
+could probably help motivate and guide me (or so I think, having
+been to only 3 meetups so far).
+
+If I were to approach documentation, I'd be fine with any
+project, but I'd really want to understand the snippets' overall
+impact in the codebase.
+
+Finally, I think blogging may also be an easy way for me to
+contribute to OSS, so I may take that up as well (not sure if
+this weekly blog counts for that).
