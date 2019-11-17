@@ -1,0 +1,27 @@
+#+TITLE: week03
+#+layout: post
+#+categories: OSS-class feelings origin-story
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+This week was geared towards the meaning of open source and version control. We also went over [[https://www.openstreetmap.org/#map=4/38.01/-95.84][OpenStreetMap]] and contributing to that.
+
+*** OpenStreetMap
+To start with, OpenStreetMap is open source! One may wonder "But isn't Google Maps more popular?", and they'd be right to do so because up until the first week of September, I was contributing to them! I think the philosophy is along the lines that Google maps have proprietary aspects to it, and we're in a freedom movement. This map does have some added benefits, because in addition to the professor's story about how the map had trails which Google maps did not in Ireland, I found the park a couple of blocks away from my house was better marked than Google maps.
+
+Furthermore, I made my first contribution to OpenStreetMap, which can be found [[https://www.openstreetmap.org/changeset/74507329][here]]. I got lucky that I saw this gas station change ownership a couple of weeks ago, because surprisingly, most places I thought of like under construction were already documented! Even the building around my house which was sold approximately 2 weeks ago! It seems there may be an active contributor in my area. Myes, friendly competition.
+
+*** "10 things you should know about open source before you use it"
+The article [[https://www.techrepublic.com/blog/10-things/10-things-you-should-know-about-open-source-before-you-use-it/]["10 things you should know about open source before you use it"]] was a nice read. To start with, I definitely knew that the open source counterparts were as great if not better than the proprietary ones. Here's a nice table I saw recently:
+
+{% include figure.html image="https://i1.wp.com/opensourceforu.com/wp-content/uploads/2017/02/Table-1.jpg" caption="Image from opensourceforu" alt="https://opensourceforu.com/2017/03/open-source-alternatives-commonly-used-proprietary-software/" %}
+
+Other than my high praise for the open source editors and workflow tools, one can find that even picture editing tools like Adobe Photoshop don't best the open source ones like GIMP. I've used both tools before, and Photoshop definitely does have some nice features that GIMP doesn't, but GIMP has some that Photoshop doesn't!
+
+I did not know that "Freeware and shareware are not the same as open source". Although we slightly touched upon them in class, I thought open source was implied for them, so this was a nice clarification.
+
+*** End Note
+I left out the version control part of this post as we're going to continue discussing it next class.
+
+Cheers!
