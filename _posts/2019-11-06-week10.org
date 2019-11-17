@@ -1,0 +1,40 @@
+#+TITLE: OSSD Week 10
+#+layout: post
+#+categories: OSSD-class feelings project-evaluation OSM GitHub-tricks
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+This week, was another hectic week, and sadly lackluster of open source contributions. Alas, it was still eventful enough: learned about Wikipedia, learned some UNIX commands, a small start on the main OSS project I chose, the start of an answer to "What does ketchup have to do with open source?", EmacsConf, and I found a fun OSS related meme.
+
+*** Wikipedia
+Wikipedia, the first source to pop up for half my searches. I haven't been able to find any articles to contribute to as of yet, but I'm sure I will. I'm actually looking at pages related to one of my interests: classical studies. I'm sure there are mythologies or plays I learned about which are not properly outlined yet. This not because of confidence in myself, but because my professors have been Greek and they actual told me childhood myth stories they claimed aren't uniform with general mythology. Also, I can literally look things up and verify certain plays since I own quite a number of them.
+
+*** UNIX Commands
+The UNIX commands lessons are great, and I hope we continue them later. I have already used `strings` on an MPI program just to see what it'll output, and it was interesting. From the slides however, I noticed my machine didn't have all the commands, such as `domainname`. It's a question I'll ask later... after the presenter.
+
+*** OSS Project
+Not much progress with the TPH website since I was very busy this week. I tried to make a sub-directory 404 page as the Gastby docs outlined, but it failed. This was likely due to the typescript setup of the project. I have a hotfix in mind using the url to simply display the special 404 based on parsing it, but I'd rather try to do it cleanly with the file system.
+
+*** What does ketchup have to do with open source?
+I found this neat article [[https://quod.lib.umich.edu/j/jep/3336451.0004.304?view=text;rgn=main]["Giving it Away: How Red Hat Software Stumbled Across a New Economic Model and Helped Improve an Industry"]] discussing ketchup's relation to open source. Seems the question related to Heinz's model and how even though ketchup is "nothing more than flavored tomato paste", users buy it instead of making it in their sinks. The article seems to suggest we can take over the market with open source projects much like how Heinz controls the market. This article is definitely a fun read, but I'm not quite sure where the money aspect comes into play. Hopefully Kevin Fleming has some insight for that tomorrow. Seeing as to how 'What does ketchup have to do with open source?' was listed in the questions to ask him, I'm sure he'll have *something* to say.
+
+*** EmacsConf
+EmacsConf was quite wild. It was wholly online, and the organize tried to make the schedule so it was reasonable for everyone around the world. It was convenient for my to just open the site and leave it on. I had a lot of work to do, so I was mostly listening and only watching at parts I really interested by. Of course, I also didn't have all day, so I plan on watching a bunch of recordings later... eventually :heart_eyes:
+
+In the beginning of the conference, I was confused by a blank screen saying coming soon and hearing voices. So like the well taught CS student I am, I fired up irrsi and navigated over the conference's IRC channel. Rather glad I did, because lo and behold, the issue wasn't limited to just me. They got the video working in a couple of minutes, but in that time, Richard Stallman actually popped into the chat, so lucky me. I feel like a lot of people held some sort confused hatred due to current politics and respect along with love because, well, Emacs. Still, it was fun to see him asking questions along with the rest of us.
+
+The main reason I bring up the conference is sure I got to use some more IRC, but also, Greg Farough spoke. He's the campaigns manager at FSF, so his talk was definitely interesting in regard to the OSS class. He discussed how even though he's not a elisping wizard, almost anyone who's interact with Emacs is considered to be an Emacs hacker. Emacs makes a special kind of editor community due to its licensing but it could've easily become like other editors with community and proprietary versions. I really don't want to try to summarize his talk, because in my humble opinion, he phrased it phenomenally. Sadly I don't see a recording of it up yet, so I can't link it.
+
+Alas, one more intriguing point Farough mentioned was how FSF people are doing basically community work. They're giving back to the community and barely living off the community. This sort of reminded me of the [Makers vs Takers](https://dri.es/balancing-makers-and-takers-to-scale-and-sustain-open-source) article. In the article, we really just see the writer writing from literally his own point of view, which is biased. He claims Takers hurt the Makers, but I wouldn't say this is necessarily true. Releasing software means the code is out there for anyone to use. It'd be unreasonable to expect let's say all Python users to swing $5 back to the Python project. It hurts no one if there's a new Python user. I'd argue that it's actually the dynamic of Makers vs Takers that hurts the project at hand. If everyone is a taker, then the project is no longer maintainable. I believe not everyone needs to be a Maker, but there should be a fair amount. And if say a company is using a JSON library in all their projects, they should probably be thankful for the library and show their appreciation. I'd perhaps argue we're not dealing with people as much as an economic model... perhaps the ketchup model is needed :joy:
+
+*** OSS Meme
+[[https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/86f3f28f-e4cf-4fc1-bb7a-38cf1502f08a/ddjoe9n-220af37f-edce-4167-929c-300eee876975.jpg/v1/fill/w_1024,h_671,q_75,strp/commission___the_fathers_by_m_art_works_ddjoe9n-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjcxIiwicGF0aCI6IlwvZlwvODZmM2YyOGYtZTRjZi00ZmMxLWJiN2EtMzhjZjE1MDJmMDhhXC9kZGpvZTluLTIyMGFmMzdmLWVkY2UtNDE2Ny05MjljLTMwMGVlZTg3Njk3NS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kcAPet2doXvuKh9v3R3TC1kxrOXCzccbrhjykJYQXPc]]
+
+#+BEGIN_CENTER
+"The Fathers" by m-art-works
+#+END_CENTER
+
+I came across this gem on Reddit (I'm not even in the community that it was posted in, but Reddit knows my tastes I suppose). Going left to right, we have Dennis Ritchie, Linus Torvalds, Richard Stallman, and Ken Thompson. They're all holding an item that is a giveaway to their identities. Ritchie is holding what seems to be a manuscript with a C logo on top, likely symbolic of the C language. Torvalds is holding a penguin (the Linux mascot). Stallman is holding the infamous GPL license. Thompson is a holding his line from `/etc/passwd` it seems... probably homage to the fact he made the original UNIX system and was likely the first user. I just though this would be a fun little tidbit to include.
+
+Cheers
