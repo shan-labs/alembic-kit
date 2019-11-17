@@ -3,7 +3,7 @@
 #+categories: OSS-class feelings origin-story
 #+liquid: enabled
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
-#+comments: false
+#+comments: true
 
 Hmm, although this blog is maintained for a class, I hope it can be an exciting
 and adventurous read.
@@ -14,32 +14,12 @@ That said, as per assignment:
 
 *A:* Well, why not? [[#spoiler][Just kidding.]]
 
-More seriously (or maybe not, fairly nonchalant), I decided to take this course
-for a couple of reasons. I suppose a stroll down memory lane is needed (queue
-the flashbacks and some music. Maybe ready some popcorn, because this is kind of
-dry).
+More seriously (or maybe not, fairly nonchalant), I decided to take this course for a couple of reasons. I suppose a stroll down memory lane is needed (queue the flashbacks and some music. Maybe ready some popcorn, because this is kind of dry).
 
-To start with, I began my programming journey as a child... if you count being
-curious about how my Megaman game worked and wanting to fiddle with that. Of
-course, I didn't actually write any code then. I started with a CS class in high
-school. My high school was kind of peculiar... our first programming language
-was scheme and all the professors were advocating Emacs as the go-to editor.
+To start with, I began my programming journey as a child... if you count being curious about how my Megaman game worked and wanting to fiddle with that. Of course, I didn't actually write any code then. I started with a CS class in high school. My high school was kind of peculiar... our first programming language was scheme and all the professors were advocating Emacs as the go-to editor.
 
-I... really got into it. Very quickly, this editor suddenly became the core of
-my workflow. I think I've earned the right to say that, with my configuration
-being over 2000 SLOC and spending about 10 hrs on average per day (according to
-wakatime.. what can I say? I use it to write code obviously but also to read
-epubs and PDFs... sometimes I just leave it open too). Anywho, a lot of tools I
-use in unison with suddenly were OSS. My operating system changed from Windows
-to Ubuntu to Manjaro. To say the least, it was a great transition.
+I... really got into it. Very quickly, this editor suddenly became the core of my workflow. I think I've earned the right to say that, with my configuration being over 2000 SLOC and spending about 10 hrs on average per day (according to wakatime.. what can I say? I use it to write code obviously but also to read EPUBs and PDFs... sometimes I just leave it open too). Anywho, a lot of tools I use in unison with suddenly were OSS. My operating system changed from Windows to Ubuntu to Manjaro. To say the least, it was a great transition.
 
-But then I realized I wanted to share the things I learned and used. Make
-packages for other users. What other way than falling the footsteps of the
-creator of Emacs, Richard Stallman? But there was also a minor inconvenience:
-I didn't really know how to design easy to use software (because it may be easy
-from my standpoint, but not necessarily other people). Also, how in the world
-does someone make money off this? I mean, I love the idea of OSS, but I should
-think about making a living too. And that's where this class comes in. Even the
-first class seemed promising, so here's to a good semester.
+But then I realized I wanted to share the things I learned and used. Make packages for other users. What other way than falling the footsteps of the creator of Emacs, Richard Stallman? But there was also a minor inconvenience: I didn't really know how to design easy to use software (because it may be easy from my standpoint, but not necessarily other people). Also, how in the world does someone make money off this? I mean, I love the idea of OSS, but I should think about making a living too. And that's where this class comes in. Even the first class seemed promising, so here's to a good semester.
 
 Cheers!
