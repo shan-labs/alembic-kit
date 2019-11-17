@@ -1,0 +1,32 @@
+#+TITLE: week05
+#+layout: post
+#+categories: OSS-class feelings origin-story
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+All right, we'll tackle some questions which arose last week first, then move on reactions to learning git and GitHub, and then finding open source projects to contribute to, finally ending it off with a summary of the week.
+
+*** The Questions Answered
+
+So, last week, I was wondering "How does one manage multiple branches checkouts? How would one fork a repository they own (would they have to work solely in branches? Is that... proper?)?". To start with, I found out my question wasn't clear! So, to explain it better, we'll use examples: imagine one is working on a navbar. This navbar has a left and right part, and for whatever reason, each part was split into different branches. Now, how would we proceed to bring the whole navbar into the master branch? My research has shown we could simply merge one branch to master at a time and resolve any conflicts which arise. Or, we can create another branch and merge there, and then merge this new branch to master. I think the latter approach seems cleaner. As for my next question, I didn't really find an answer, so the question remains. That's not to say I didn't look into it however. I found many people just commited to the repository without restricting themselves, and others worked in branches, and more common: they made an organization and moved the project there. A more clear answer requires some more research though!
+
+*** Reactions To Learning Git and GitHub
+
+While learning the technologies, I had a lot of questions because I had previously been slightly exposed to them already. It may be apparent from the questions above and below, but finding a good workflow is hard. To be honest, I'm kind of surprised this is such a high number course, when I feel these are skills we should learn in the beginning of our cs careers. I can't imagine working on a project without version, nor working on a group project without a website like GitHub... but I probably have at some point. It's just so inane to do so once you learn of their existence.
+
+*** Finding Open Source Projects To Contribute To
+
+Reading over [[https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to][Section 4 of GitHub's How To Contribute]], I found the checklist to be a good wake up call. Normally I may have skipped the (or lack of a) license file. But going through the checklist keeps me on my toes.
+
+I think the issue search engines are fairly neat. They definitely streamline the process to finding an issue one can contribute to, but rely on people properly tagging issues. I also want to learn how to use GitHub's search bar too. It surprises me the search bar ignores symbols.
+
+*** Mini Summary
+
+Despite being the first PR to R-Ligier's blog, she merge a PR made after mine. I think I may have encountered a workflow issue, since the PR did a lot of the fixes I had already made. But it was still different. So per request of  R-Ligier, I fixed all the conflicts. I also realize having a good editor is nice for resolving conflicts. The default Emacs configuration is good, but I'm told Emacs' =Magit= package is extraordinary and some people open up a session of Emacs solely to use it, despite being users of other editors. Sounds like a package worth looking into for sure.
+
+Also, someone actually beat me to the potential openstreetmap contribution! I didn't make it at first because I was on my way home and noticed a restaurant's hours weren't on the map (I realized looking at the map while commuting was a good move). Anywho, it was late at night, so I decided I would do later, and lo and behold, I was late!
+
+Lastly: Karen Sandler! I'm excited she's coming to give a talk and doing a Q & A session with us. I added the questions "How does one craft a license? At what point does it become legally binding? How do we deal with changing a project's license (our own, or ones we use)?". I also upvoted other questions. I'm very interested in the power and extents of a license.
+
+Lastly, another question arose! What's the best practice for multiple PRs? That is to say, what if I want to work on multiple features to be merged to master? I don't think they should all be in one PR, but also, it takes a lot of time to get each PR check, so waiting sequentially is equally as bad. For now, I think it may be best to make issues and make branches for those, and add one PR to master per a sequential order.
