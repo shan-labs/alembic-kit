@@ -15,7 +15,10 @@ Furthermore, I made my first contribution to OpenStreetMap, which can be found [
 *** "10 things you should know about open source before you use it"
 The article [[https://www.techrepublic.com/blog/10-things/10-things-you-should-know-about-open-source-before-you-use-it/]["10 things you should know about open source before you use it"]] was a nice read. To start with, I definitely knew that the open source counterparts were as great if not better than the proprietary ones. Here's a nice table I saw recently:
 
-{% include figure.html image="https://i1.wp.com/opensourceforu.com/wp-content/uploads/2017/02/Table-1.jpg" caption="Image from opensourceforu" alt="https://opensourceforu.com/2017/03/open-source-alternatives-commonly-used-proprietary-software/" %}
+[[https://i1.wp.com/opensourceforu.com/wp-content/uploads/2017/02/Table-1.jpg]]
+#+BEGIN_CENTER
+([[https://opensourceforu.com/2017/03/open-source-alternatives-commonly-used-proprietary-software/][Image from opensourceforu]])
+#+END_CENTER
 
 Other than my high praise for the open source editors and workflow tools, one can find that even picture editing tools like Adobe Photoshop don't best the open source ones like GIMP. I've used both tools before, and Photoshop definitely does have some nice features that GIMP doesn't, but GIMP has some that Photoshop doesn't!
 
