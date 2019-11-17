@@ -1,4 +1,4 @@
-#+TITLE: week04
+#+TITLE: OSSD Week 04
 #+layout: post
 #+categories: OSS-class feelings git contributions articles analysis
 #+liquid: enabled
@@ -7,11 +7,13 @@
 
 Hmm, this post will try to answer the provided questions and then tackle the summary of week 4.
 
-*** Comment on your experience with the Git activity that you did in class today. Was it useful? Was it confusing? Did you have time to finish? Did you have merge conflicts? Were you able to resolve them?
+*** Comment on your experience with the Git activity that you did in class today.
+**** Was it useful? Was it confusing? Did you have time to finish? Did you have merge conflicts? Were you able to resolve them?
 
 This was a fun experience. I think my group actually got to experience a real world issue: waiting on others. One of the members of my group hadn't pushed the README.md file by the end of class. However, they pushed it later, so my group was able to successfully complete the assignment. I think we had enough time to finish... if you count the late push as within time. But, this also simulates the real world, because the fact of the matter is that not everything is perfectly and sometimes schedules have to be modified to account for a feature taking longer to implement than it estimation. However, I suppose this late push was also a blessing in disguise, since I ended up finishing without a merge conflict (sadly not true for the whole team... guess somebody had to take one for the team eh). I don't think this activity was confusing, but some of the stuff in the presentation may have been, until we actually did the activity.
 
-*** What are your reactions to the above on-line readings. Pick one or two that made an impression on you and articulate your thoughts about them.
+*** What are your reactions to the above on-line readings.
+**** Pick one or two that made an impression on you and articulate your thoughts about them.
 
 The readings:
 - [[https://www.freecodecamp.org/news/a-beginners-very-bumpy-journey-through-the-world-of-open-source-4d108d540b39/]["A Beginner‘s Very Bumpy Journey Through The World of Open Source"]]
@@ -22,7 +24,8 @@ Shubheksha's article of her bumpy journey, "A Beginner‘s Very Bumpy Journey Th
 
 In the "7 Things That Make a Great Open Source Contribution", I realized at point 5 that a lot of projects are TDD (Test Driven Development). However, as a user, I sometimes just encounter issues that were unaccounted for (insert a QA, quality assurance, meme here). As a user, I may know how to change the code to fix that bug, but not necessarily be able (or want to) to write comprehensive test. That may be an obstacle I should look further into.
 
-*** Make an edit to a classmate's blog post following the procedure described in the [[http://www.compsci.hunter.cuny.edu/~sweiss/course_materials/csci395.86/activities_f19/blog_editing_activity.pdf][Blog Editing Activity]]. Look for spelling mistakes or grammatical changes, or formatting changes.
+*** Make an edit to a classmate's blog post
+**** Follow the procedure described in the [[http://www.compsci.hunter.cuny.edu/~sweiss/course_materials/csci395.86/activities_f19/blog_editing_activity.pdf][Blog Editing Activity]]. Look for spelling mistakes or grammatical changes, or formatting changes.
 
 Initially I started by checking out the git repositories under the organization. And I came across kbarias' one first, which seemed like an easy PR (simply a formatting mistake), but then as I navigated back to the root to hit the fork button, someone had forked it! Was this a lack in communication as discussed in the collaboration workflow presentation? Perhaps... or it was more along the lines that everybody was scrambling to find a repository to contribute to, which is far less likely to happen in a real project. I think in a real project, when someone finds a bug/ issue, it's far less likely to be found at the same time as several users. Even if it is, it's unlikely that they will all fork at once. Here, I probably hit this problem due to the assignment because we were all looking for the same issue. Luckily, I came across R-Ligier's next and found a lot of typos waiting to be corrected.
 

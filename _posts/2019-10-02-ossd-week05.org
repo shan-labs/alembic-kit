@@ -1,4 +1,4 @@
-#+TITLE: week05
+#+TITLE: OSSD Week 05
 #+layout: post
 #+categories: OSS-class feelings git workflow
 #+liquid: enabled
@@ -9,7 +9,7 @@ All right, we'll tackle some questions which arose last week first, then move on
 
 *** The Questions Answered
 
-So, last week, I was wondering "How does one manage multiple branches checkouts? How would one fork a repository they own (would they have to work solely in branches? Is that... proper?)?". To start with, I found out my question wasn't clear! So, to explain it better, we'll use examples: imagine one is working on a navbar. This navbar has a left and right part, and for whatever reason, each part was split into different branches. Now, how would we proceed to bring the whole navbar into the master branch? My research has shown we could simply merge one branch to master at a time and resolve any conflicts which arise. Or, we can create another branch and merge there, and then merge this new branch to master. I think the latter approach seems cleaner. As for my next question, I didn't really find an answer, so the question remains. That's not to say I didn't look into it however. I found many people just commited to the repository without restricting themselves, and others worked in branches, and more common: they made an organization and moved the project there. A more clear answer requires some more research though!
+So, last week, I was wondering "How does one manage multiple branches checkouts? How would one fork a repository they own (would they have to work solely in branches? Is that... proper?)"?. To start with, I found out my question wasn't clear! So, to explain it better, we'll use examples: imagine one is working on a navbar. This navbar has a left and right part, and for whatever reason, each part was split into different branches. Now, how would we proceed to bring the whole navbar into the master branch? My research has shown we could simply merge one branch to master at a time and resolve any conflicts which arise. Or, we can create another branch and merge there, and then merge this new branch to master. I think the latter approach seems cleaner. As for my next question, I didn't really find an answer, so the question remains. That's not to say I didn't look into it however. I found many people just commited to the repository without restricting themselves, and others worked in branches, and more common: they made an organization and moved the project there. A more clear answer requires some more research though!
 
 *** Reactions To Learning Git and GitHub
 

@@ -5,7 +5,7 @@
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 #+comments: true
 
-Open source contribution can definitely feel intimidating, but it should be doable nonetheless. I definitely agree with the advice that one should read a lot code before starting their contribution.
+Open source contributions can definitely feel intimidating, but it should be doable nonetheless. I definitely agree with the advice that one should read more code than write as much code before starting their contribution.
 
 To start off with, I was fairly intimidated by the [[https://icontribute.wordpress.com/how-to-contribute-to-open-source-without-coding/][long list]] of just the /ways/ to contribute to open source. I definitely like the idea of contributing code, but I think that's a goal for later down the road. It may be more reasonable to make my first contributions documentation related or bug related instead.
 

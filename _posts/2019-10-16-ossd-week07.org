@@ -5,12 +5,12 @@
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 #+comments: true
 
-The past week was quite hectic. Project evaluations was an interesting. Choosing a project... not so much. Sadly no openstreetmap contribution to be mentioned this week *again* :sweat:.
+The past week was quite hectic. Project evaluations was an interesting. Choosing a project... not so much. Sadly no openstreetmap contribution to be mentioned this week /again/ :sweat:.
 
 *** Project Evaluations
 With a team, I evaluated [[https://www.gatsbyjs.org/][Gatsby]]. I was actually quite interested in looking this project over, since one of my good friends recently changed his blog to use it. I found myself wasting some time looking at its features and being intrigued by its graphql reliance. integration. It was totally fine to 'waste time' (more like invest time :eyes:), since I was working in a group of three. But still, I found doing a project evaluation quite tough -- or more accurately busy work.
 
-As the good saying goes: what doesn't kill you, makes you stronger. I ended up picking up couple of useful tricks. `wc **/*` can be used to analyze the source to see its LOC (I'm not sure if it picks up on hidden files, but that shouldn't matter too much). The insights page was extremely helpful in speeding along things, or else we would've had to count for quite a while. I also found GitHub itself is pretty cool at analyzing itself, for example you can use [[https://help.github.com/en/articles/searching-issues-and-pull-requests#search-by-when-an-issue-or-pull-request-was-created-or-last-updated][qualifiers on dates]] and much much more. I also want to play with the GitHub API a bit more later. It seems complicated, but fun.
+As the good saying goes: what doesn't kill you, makes you stronger. I ended up picking up couple of useful tricks. =wc */*= can be used to analyze the source to see its LOC (I'm not sure if it picks up on hidden files, but that shouldn't matter too much). The insights page was extremely helpful in speeding along things, or else we would've had to count for quite a while. I also found GitHub itself is pretty cool at analyzing itself, for example you can use [[https://help.github.com/en/articles/searching-issues-and-pull-requests#search-by-when-an-issue-or-pull-request-was-created-or-last-updated][qualifiers on dates]] and much much more. I also want to play with the GitHub API a bit more later. It seems complicated, but fun.
 
 Then, solo, I evaluated [[https://github.com/starship/starship][Starship]]. I chose this project partially because it showed up in my GitHub explore feed a while back and kind of looked interesting (more on this later). This time process went by much more quickly, maybe because of all the tricks I learned :sweat_smile:. The activity was definitely helpful in seeing how active a community is, but I also feel like it may not apply to every community due to varying presence.
 
@@ -20,7 +20,7 @@ I think I may be interested in the Starship project, though I'm wholly unfamilia
 The other projects I was looking at were mostly in OCaml, C++, Python, and ELisp. I didn't see any really caught my eye, though many repositories seem to be in a Hactoberfest festive mood. For now, I'll keep looking at Starship as a fallback plan, but I'd rather make a medium sized code contribution in a codebase I'm more comfortable with.
 
 *** openstreetmap
-Woah woah, I didn't make a contribution, so why have the section? Well, I *was going to*, but it was raining cats and dogs outside. I was completely drenched and my glasses were basically unusable. But, I still do have my eyes set on an Allstate a couple of blocks away from my home. So, as soon as the weather is permitting and I have the time, a contribution will likely be made (unless I get outdone) :shipit:
+Woah woah, I didn't make a contribution, so why have the section? Well, I /was going to/, but it was raining cats and dogs outside. I was completely drenched and my glasses were basically unusable. But, I still do have my eyes set on an Allstate a couple of blocks away from my home. So, as soon as the weather is permitting and I have the time, a contribution will likely be made (unless I get outdone) :shipit:
 
 *** Side Notes
 In reference to the varying community presences I've seen, I'm kind of interested in how mailing list communities work. Hopefully we'll do a mini-lesson on that, since they're more intimidating than GitHub in my humble opinion.

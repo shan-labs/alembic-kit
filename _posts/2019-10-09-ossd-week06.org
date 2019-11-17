@@ -1,4 +1,4 @@
-#+TITLE: week06
+#+TITLE: OSSD Week 06
 #+layout: post
 #+categories: OSS-class feelings guest-speaker ruby gems org
 #+liquid: enabled
@@ -13,13 +13,13 @@ To start with, Sandler is the executive director of the Software Freedom Conserv
 
 One of the most interesting thing she mentioned is how to view a contribution. One could view a project as a culmination of shared efforts, or as if person 1 had a work, and if person 2 made a change it would be derivative work, and if person 3 made a change it would be derivative work, and so on and so forth.
 
-Another important point that caught me was inherent biases in technology. I actually read an article showing how cars (not even self-driving, just regular cars) are super dangerous due to inherent biases. Where are the biases? In the test dummies. Many manufacturers use standardized dummies, but those dummies tend to have a masculine build and a certain weight and height. What might be safe air bag pressure for someone 5' 10" and 150 lbs  may be deadly for someone 5' 100 lbs. Her examples of smaller biases like automatic sinks not detecting motion but depending on light reflection also hit a point. I've noticed sometimes sinks don't work for *me* until I flip my hands, and now I realize it's probably because my backhand has some dark hair. Open sourcing technology and data is crucial for better technology.
+Another important point that caught me was inherent biases in technology. I actually read an article showing how cars (not even self-driving, just regular cars) are super dangerous due to inherent biases. Where are the biases? In the test dummies. Many manufacturers use standardized dummies, but those dummies tend to have a masculine build and a certain weight and height. What might be safe air bag pressure for someone 5' 10" and 150 lbs  may be deadly for someone 5' 100 lbs. Her examples of smaller biases like automatic sinks not detecting motion but depending on light reflection also hit a point. I've noticed sometimes sinks don't work for /me/ until I flip my hands, and now I realize it's probably because my backhand has some dark hair. Open sourcing technology and data is crucial for better technology.
 
 I found the elections needing to be open sourced point that Professor Weiss brought up to be interesting. I know poll results have been publicized, but it's strange that the technology itself hasn't been. I liked how Sandler replied to my followup question of "Many companies make the argument that open sourcing the technology makes it vulnerable as anyone can find exploits now, how does that factor in?", with that it is flawed thinking. It's more likely that those exploits will found by people who will tell the agencies, and even if malicious people find them, they would have found them eventually anyways.
 
 I also ended up doing some research and found that Microsoft was working on a open source election software. But also DARPA threw $10 million in the ring as well. DARPA went as far as to try and have hackers at Def Con (though there were technical difficulties). That's the right spirit though! Transparency, especially in an election, is a must.
 
-So, the key take away here is simple: there's no point to *not* open sourcing!
+So, the key take away here is simple: there's no point to /not/ open sourcing!
 
 *** IRC
 
