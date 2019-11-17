@@ -1,6 +1,6 @@
 #+TITLE: week05
 #+layout: post
-#+categories: OSS-class feelings origin-story
+#+categories: OSS-class feelings git workflow
 #+liquid: enabled
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 #+comments: true
@@ -23,10 +23,10 @@ I think the issue search engines are fairly neat. They definitely streamline the
 
 *** Mini Summary
 
-Despite being the first PR to R-Ligier's blog, she merge a PR made after mine. I think I may have encountered a workflow issue, since the PR did a lot of the fixes I had already made. But it was still different. So per request of  R-Ligier, I fixed all the conflicts. I also realize having a good editor is nice for resolving conflicts. The default Emacs configuration is good, but I'm told Emacs' =Magit= package is extraordinary and some people open up a session of Emacs solely to use it, despite being users of other editors. Sounds like a package worth looking into for sure.
+Despite being the first PR to R-Ligier's blog, she merged a PR made after mine. I think I may have encountered a workflow issue, since the PR did a lot of the fixes I had already made. But it was still different. So per request of  R-Ligier, I fixed all the conflicts. I also realize having a good editor is nice for resolving conflicts. The default Emacs configuration is good, but I'm told Emacs' =Magit= package is extraordinary and some people open up a session of Emacs solely to use it, despite being users of other editors. Sounds like a package worth looking into for sure.
 
 Also, someone actually beat me to the potential openstreetmap contribution! I didn't make it at first because I was on my way home and noticed a restaurant's hours weren't on the map (I realized looking at the map while commuting was a good move). Anywho, it was late at night, so I decided I would do later, and lo and behold, I was late!
 
-Lastly: Karen Sandler! I'm excited she's coming to give a talk and doing a Q & A session with us. I added the questions "How does one craft a license? At what point does it become legally binding? How do we deal with changing a project's license (our own, or ones we use)?". I also upvoted other questions. I'm very interested in the power and extents of a license.
+Ah and very importantly: Karen Sandler! I'm excited she's coming to give a talk and doing a Q & A session with us. I added the questions "How does one craft a license? At what point does it become legally binding? How do we deal with changing a project's license (our own, or ones we use)?". I also upvoted other questions. I'm very interested in the power and extents of a license.
 
 Lastly, another question arose! What's the best practice for multiple PRs? That is to say, what if I want to work on multiple features to be merged to master? I don't think they should all be in one PR, but also, it takes a lot of time to get each PR check, so waiting sequentially is equally as bad. For now, I think it may be best to make issues and make branches for those, and add one PR to master per a sequential order.

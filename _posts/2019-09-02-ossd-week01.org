@@ -1,6 +1,6 @@
-#+TITLE: week01
+#+TITLE: OSSD Week 01
 #+layout: post
-#+categories: OSS-class feelings origin-story
+#+categories: OSSD-class feelings origin-story
 #+liquid: enabled
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 #+comments: true
