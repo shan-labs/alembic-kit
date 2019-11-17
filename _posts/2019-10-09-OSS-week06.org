@@ -1,0 +1,84 @@
+#+TITLE: week06
+#+layout: post
+#+categories: OSS-class feelings origin-story
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+All right, the past week was extremely cool. I got to meet Karen Sandler, a very cool person. Also went over a little IRC and how it works. And... I made a PR in a language I was unfamiliar with, but the PR got merged fairly quickly! This post if going to be super long but exciting (at least I think so :sweat_smile:).
+
+*** Karen Sandler
+
+To start with, Sandler is the executive director of the Software Freedom Conservancy and former executive director of the GNOME Foundation. She's a lawyer at heart and taught us some of the law aspects in tech.
+
+One of the most interesting thing she mentioned is how to view a contribution. One could view a project as a culmination of shared efforts, or as if person 1 had a work, and if person 2 made a change it would be derivative work, and if person 3 made a change it would be derivative work, and so on and so forth.
+
+Another important point that caught me was inherent biases in technology. I actually read an article showing how cars (not even self-driving, just regular cars) are super dangerous due to inherent biases. Where are the biases? In the test dummies. Many manufacturers use standardized dummies, but those dummies tend to have a masculine build and a certain weight and height. What might be safe air bag pressure for someone 5' 10" and 150 lbs  may be deadly for someone 5' 100 lbs. Her examples of smaller biases like automatic sinks not detecting motion but depending on light reflection also hit a point. I've noticed sometimes sinks don't work for *me* until I flip my hands, and now I realize it's probably because my backhand has some dark hair. Open sourcing technology and data is crucial for better technology.
+
+I found the elections needing to be open sourced point that Professor Weiss brought up to be interesting. I know poll results have been publicized, but it's strange that the technology itself hasn't been. I liked how Sandler replied to my followup question of "Many companies make the argument that open sourcing the technology makes it vulnerable as anyone can find exploits now, how does that factor in?", with that it is flawed thinking. It's more likely that those exploits will found by people who will tell the agencies, and even if malicious people find them, they would have found them eventually anyways.
+
+I also ended up doing some research and found that Microsoft was working on a open source election software. But also DARPA threw $10 million in the ring as well. DARPA went as far as to try and have hackers at Def Con (though there were technical difficulties). That's the right spirit though! Transparency, especially in an election, is a must.
+
+So, the key take away here is simple: there's no point to *not* open sourcing!
+
+*** IRC
+
+So, in terms of IRC clients... I don't like them. I installed HexChat first, but for some reason it kept giving me my computer's name, but it prompted for personal information for my friend. So, I made the obvious and instead of searching for answers, I installed Irssi. This was extremely barebones, but I ended up learning all the IRC commands as you needed them to even connect to a server. So it was a good learning experience... until I encountered my next problem: private messages. I sent my friend a private message "hi" in class and he replied back, but I couldn't figure out how to check it. I think I've been corrupted by newer forms of communication like Slack and Discord. I definitely prefer their UI, but also the concept of saved messages. The question I keep thinking of is "if someone private messages and I don't have my IRC client open, how will I know?". I mean, I suppose IRC isn't meant to contact someone as much as having a real time discussion, but the technologies like Discord manage to do both, so IRC looks pales in comparison. But, I think it's just a matter of time and getting used to it. I see a lot of packages and companies like to use it, so I definitely want to give it another shot and get into it.
+
+*** PR
+
+I made a PR to a gem called =jekyll-org= :innocent:. You can view the PR [[https://github.com/eggcaker/jekyll-org/pull/44][here]]. Why this gem? Because I wanted to use it! It allows jekyll posts to be written in org, which is a better markup language than markdown in my humble opinion. Gems are written in Ruby and I had absolutely no experience writing Ruby before this PR. But... it was super easy to pick up [the basics]! I'm not an elite Ruby coder now, but the syntax was extremely similar to python. But looking at the PR, you may wonder "What? Not even the code you wrote looks like python code." and that's fair. Originally, the
+
+#+BEGIN_SRC ruby
+%w[tags categories].include?(buffer_setting)
+#+END_SRC
+
+snippet actually looked like
+
+#+BEGIN_SRC ruby
+(buffer_setting == 'tags' or buffer_setting == 'categories')
+#+END_SRC
+
+But my editor yelled at me! It uses rubocop, which is a Ruby static code analyzer and formatter, so I automatically got a vague message to look into the docs for better statements than "redundant comparisons". I was totally confused by what that meant, but it turns out that if an if statement is comparing one variable multiple times, the =%w[value1 value2].include?(variable)= syntax is preferred. =%w= just makes the array a word array and viola, we check the variables against the values. It was a pretty good suggestion, because that makes the snippet robust for future, if =buffer_settings= needs to be compared against anything else for an array of values, you can just add the keyword to the list. The truer booleans was something that I found dumb really, the gem was turning =true= into ="true"= (same for =false= respectively). So with another =elsif= and following rubocop, I made =true= become =true= (same for =false= respectively). The PR was merged fairly quickly, probably because it was very clean and because many people use Jekyll's categories feature, so the fix was nice.
+
+One more thing I'd like to throw out for the record is that editing a gem may be easy, but testing it out is easy too. A =Gemfile= generally looks little bit like so:
+
+#+BEGIN_SRC ruby
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 3.8'
+gem 'jekyll-default-layout'
+gem 'jekyll-feed'
+gem 'jekyll-mentions'
+gem 'jekyll-org',
+gem 'jekyll-paginate'
+gem 'jekyll-redirect-from'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jemoji'
+#+END_SRC
+
+I was editing =jekyll-org=, so I forked the repository (luckily it was on GitHub and not GitLab!), and changed my =Gemfile= to:
+
+#+BEGIN_SRC ruby
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 3.8'
+gem 'jekyll-default-layout'
+gem 'jekyll-feed'
+gem 'jekyll-mentions'
+gem 'jekyll-org',
+    :git => 'https://github.com/kkhan01/jekyll-org.git',
+    :ref => 'master'
+gem 'jekyll-paginate'
+gem 'jekyll-redirect-from'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jemoji'
+#+END_SRC
+
+Note the new =:git= and =:ref= under the =jekyll-org=. I'm just specifying the github url and which branch it's on. Viola, you can just use =bundle install= and =bundle exec jekyll serve= to test it instead of modifying your gems in your =.gems= folder.
