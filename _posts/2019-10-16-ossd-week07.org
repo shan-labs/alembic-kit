@@ -1,6 +1,6 @@
 #+TITLE: OSSD Week 07
 #+layout: post
-#+categories: OSSD-class feelings project-evaluation OSM GitHub-tricks
+#+categories: ossd-class feelings project-evaluation osm github-tricks
 #+liquid: enabled
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 #+comments: true

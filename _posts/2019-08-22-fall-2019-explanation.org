@@ -8,6 +8,6 @@ The time has come again: college restarted. This time around, I went crazy and o
 
 I decided to make one of those 21 credits CSCI 395.86, aka Open Source Software Development. In the course, there's a neat little aspect in addition to learning licenses, version control, (H)(F)OSS, cool talks, learning how to make money with open source and the sort: maintaining a blog for the class! Sadly, the blog will be under the class organization and will contain more systemic posts than free-for-all, random posts. However, I plan on syncing up the posts here... which may or may not be done punctually. I'll try to stay free-spirited and have posts outside the sync, but the class posts may actually be enjoyable... so look forward to it!
 
-I plan on prefixing the title of the posts with `OSSD` and adding a category/ tag of `OSSD-class`. The content of the posts will /not/ be limited to just class, so there's hope. I will use the tone as though the reader is a classmate most of the time, it's just easier to act like I'm engaged in a conversation sometimes.
+I plan on prefixing the title of the posts with =OSSD= and adding a category/ tag of =ossd-class=. The content of the posts will /not/ be limited to just class, so there's hope. I will use the tone as though the reader is a classmate most of the time, it's just easier to act like I'm engaged in a conversation sometimes.
 
 Short post, but hopefully this will clarify next semester's layout.
