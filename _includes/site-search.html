@@ -1,7 +1,7 @@
 <div class="form  form--search">
   <form id="contact-form" action="">
     <label class="label" for="search">Search term:</label>
-    <input class="input" id="search" type="search" name="search" placeholder="e.g. About us" autocomplete="off" />
+    <input class="input" id="search" type="search" name="search" placeholder="e.g. ketchup" autocomplete="off" />
 
     <ul class="list  list--results" id="list">
       <!-- results go here -->
@@ -33,7 +33,7 @@
         <li class="item  item--result">
           <article class="article  typeset">
             <h4><a href="${item.url}">${item.title}</a></h4>
-            <p>${item.content.split(" ").splice(0,43).join(" ") + ((item.content.split(" ").length < 43) ? "" : "...")}</p>
+            <p>${item.content}</p>
           </article>
         </li>`;
    }).join('');

@@ -1,13 +1,13 @@
 {% if page.categories %}
 {% capture categories %}
-{% assign sorted_pages = page.categories | sort %}
-{% for category in sorted_pages %}
-<span class="label  label--category"><a href="{{ site.baseurl }}/categories/#{{ category | downcase }}">{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
+{% assign sorted_categories = page.categories | sort %}
+{% for category in sorted_categories %}
+<span class="label  label--category"><a href="{{ site.baseurl }}/search/#{{ category | downcase }}">{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
 {% endfor %}
 {% endcapture %}
 {% elsif page.category %}
 {% capture categories %}
-<span class="label  label--category"><a href="{{ site.baseurl }}/categories/#{{ page.category | downcase }}">{{ page.category }}</a></span>
+<span class="label  label--category"><a href="{{ site.baseurl }}/search/#{{ page.category | downcase }}">{{ page.category }}</a></span>
 {% endcapture %}
 {% endif %}
 

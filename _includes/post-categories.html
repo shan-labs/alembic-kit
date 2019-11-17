@@ -1,4 +1,5 @@
-{% for category in site.categories %}
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
 {% assign category_name = category | first %}
 <section class="section  typeset">
   <h2 id="{{ category_name | slugify }}">{{ category_name }}</h2>
@@ -9,7 +10,7 @@
       <article class="article  article--post  typeset">
         <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
         {% include post-meta.html %}
-        {{ page.content | truncatewords: 45 }}
+        {{ page.content | split: '</p>' | first | truncatewords: 60 }}
       </article>
     </li>
     {% endfor %}
