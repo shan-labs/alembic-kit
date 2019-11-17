@@ -1,0 +1,43 @@
+#+TITLE: OSSD Week 09
+#+layout: post
+#+categories: OSSD-class feelings git OSM reading
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+This week, I did quite a lot of OSS *things*, so I'll dissect them. Firstly, I read The Cathedral and the Bazaar and had many thoughts on that. I also made 4 contributions to openstreetmap in a day. I setup my development environment the TPH website. Lastly, we also did a lengthy git rebase vs git merge exercise in class I want to discuss.
+
+*** The Cathedral and the Bazaar
+The Cathedral and the Bazaar talks... a cathedral vs a bazaar. The euphemism is that a cathedral were made by a select few specialized workers and no one else could contribute. This would often result in cathedrals being build in centuries. This represents closed source code. In contrast, a bazaar is a hodepodge of many people from different backgrounds and skills working in a somewhat chaotic community with some sort of a beautiful flow that keeps it going. This represents open source.
+
+Eric mentioned how he used to work with a cathedral environment until Linus Torvalds kickstarted the new era of the bazaaar. I love everything about the bazaar chaos and flow, but I still don't see profit as a coder outside of a cathedral project :cry: Just means I have to continue the journey a bit more I guess :sweat_smile:
+
+I actually think I'm going to cut this off a bit short here and talk a bit more next week hopefully, since this post is quite lengthy (I wrote the post out of order, but feel free to think I'm a [[#spoiler][spoiler ->]] [[https://www.youtube.com/watch?v=SBe9uvPKnKU][psychic]] :stuck_out_tongue:).
+
+*** OSM
+I'm going to refer to openstreetmap as OSM from this point forwards. So... about the 4 in 1, eh? Now now, you're probably wondering how I made 4 contributions all in one day when I was struggling to for the past week :eyes: It's simple: I looked for things other than buildings. Living in New York had primed me to think of buildings first, but I found simple things like stop signs missing from the map.
+
+Speaking of which, stop signs are probably the most confusing map feature on OSM. I mean sure, place a stop sign down and you're done, but stop signs also have *direction*. The direction was uber confusing for me. I tried looking around for other stop signs on the map and scavenged the OSM wiki as well as Reddit, and came to the conclusion no one knew what they were doing with this. The wiki had the definition "Where needed, this can be done using direction=forward or direction=backward, relating stop direction to OSM forward/backward of the way that contains the highway=stop node." (can be found [[https://wiki.openstreetmap.org/wiki/Tag:highway%253Dstop][here]]). On the map itself, I found several signs in different area I knew, and they followed differing logics from one another. So, I did what I felt the definition meant and left the comment that it *may* have been wrong.
+
+There is kind of a commercial strip in front of the gas station which was my first contributing to OSM. This strip is kind of a hodgepodge of stores you wouldn't bat an eye to, but exist anyways. I've honestly never seen anyone entering or leaving them except for employees, but it was another easy contribution for me.
+
+Fixing a dead end was also easy. I was actually surprised that the paths were still connected because as far as I know, the paths got disconnected in real life like a decade ago and there is an active OSM-er around me.
+
+I suppose a deadline was all the motivation I needed to make contributions. These were fairly easy to make and I could've made them beforehand, but I suppose I wasn't in the right mindset and kept procrastinating/ ignoring it for what I had viewed to be a solid contribution.
+
+*** Sudden Contribution
+Guess I like to do OSS outside of class. I ended up contributing to my friend's blog with [[https://github.com/Dreameh/wata-blog/pull/1][this PR]]. He wanted to make the default theme for the site dark theme and was about to sacrifice user preference, but let me have a go at it. I felt it was a great learning experience. His blog uses Gatsby, which the TPH website (project I chose to make my OSS class's code contribution to) also uses. So, this let me get a little more familiar with the a Gatsby site's setup and how components interact with one another. He also walked me through some other goodies like npm vs yarn and helped me choose some good colors for my personal site (quid pro quo I suppose). I also got see graphql on a Gatsby site, which may sound simple, but it was mindblowing for me.
+
+*** OSS Code Contribution
+So, as per the OSS class, I had chosen the [[https://theprogrammershangout.com/][TPH website]] to my code contribution. I installed all the perquisites and found I can test the site locally. In terms of issues, I'm still browsing I suppose.
+
+Rereading at issue [[https://github.com/the-programmers-hangout/website/issues/18][18]] made me realize it was actually 3 separate features in 1. Seems like they're asking for pagination links, extra resources embeds, and from what I've speculated -- link preview cards. The first can probably  utilize that it's a Gatsby site and it has graphql integrated, so one would only need to figure out edges for a query and then sort them to figure out which pages would be prev and next (or if they even exist). I'm also interested in graphql in general, but not able to use it fully yet. The other two seem a bit more painful. Making a card is just busywork css, but populating with information would require making requests to sites and then parsing, but one would need to bypass CORS.
+
+I think issue [[https://github.com/the-programmers-hangout/website/issues/120][120]] may also be nice to work on. Seems PR [[https://github.com/the-programmers-hangout/website/pull/126][126]] tried to tackle it, but they don't seem to have done anything as requested... also, there seems to be no progress on this. I think a good solution to the workflow would be first to communicate what I'm planning to do. And what I'm planning to do is just create the 404 to be used by the subdirectory and work on that. I'm actually kind of shaky on the subdirectory part. It would be disgustingly easy for a fully static site, but I'm not too sure within a react framework. But still, it's doable. Levenshtein is a fun little algorithm I encountered since I'm slightly interested in linguistics and very much so in computer science, but I haven't had the chance to get into its nitty gritty yet. Also, again it seems like one would be utilizing graphql to query the pages for be used in deciding which pages the user may have meant and what information to display.
+
+There are also multiple issues requesting content, which I may choose to tackle until I'm ready for whichever code issue I've chosen. I think staying immersed in the project is a good way to figure out and get comfortable with he project and its tool set.
+
+*** OSS in Class Exercise
+We did a fairly long exercise about pulling, fetching, merging, branching, and rebasing. From what I understand, `pull` basically calls `fetch` and `merge`. I get why we may want to fetch and then merge ourselves afterwards rather than directly (to view the changes beforehand), but I honestly didn't understand `merge` vs `rebase`. I suppose when the professor said 'rebase rewrites the history', things started to click. I suppose it *is* a cleaner way to work... but only if I'm working solo. Working in a team would make this a nightmare. The same for a public repository, since people using or contributing to the project would have to struggle. I suppose this is why the ProGit book advises against it in these scenarios :joy:
+
+Ah, I got really comfortable with branching as well. For this exercise, we used branches to simulate multiple people working on a project and intentionally cause conflicts. But, I ended up using branches and merges for a project for my Big Data course to facilitate our workflow. It was great because I could just work on what I needed to and not worry about a conflict every time I pushed. One bad habit I've already developed is defining branches by the feature name but ending up doing that feature and parts of other features in a branch, so the features  weren't strictly contained within their respective branches. I realize this may lead to confusion, but it was already for this project, since all of out branches needed to be merged to master and could be deleted later. But as a personal goal, I'll work on that.
