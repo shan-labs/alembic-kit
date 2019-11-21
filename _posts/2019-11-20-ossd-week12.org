@@ -1,0 +1,81 @@
+#+TITLE: OSSD Week 12
+#+layout: post
+#+categories: ossd-class wikipedia election-fraud emacs hfoss netlify
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+This week was full of breakthroughs. I made 2 more edits to Wikipedia, learned some more UNIX commands, read an interesting article on how open source can help prevent election fraud, learned about humanitarian free open source projects (HFOSS), and made nice progress on the OSSD project I chose.
+
+*** Table of Contents :TOC_7:
+    - [[#wikipedia][Wikipedia]]
+    - [[#preventing-election-fraud][Preventing Election Fraud]]
+    - [[#wappalyzer][Wappalyzer]]
+    - [[#hfoss][HFOSS]]
+    - [[#the-oss-project][The OSS Project]]
+    - [[#end-of-post][End of Post]]
+
+*** Wikipedia
+Making two more edits to Wikipedia was a different experience than my first two edits.
+
+To start off, I was doing some research and came across the roche moutonnée Wikipedia page. The page said ' The French term is often incorrectly interpreted as meaning "sheep rock"', which I thought was ambiguous, so I modified it so say 'The French term is often incorrectly interpreted as meaning "sheep rock" due to [[https://en.wikipedia.org/wiki/Literal_translation][literal translation]] of the phrase.'. A literal translation is when you translate each word separately rather than taking the whole phrase together. This is often a problem with idioms and slang translations.
+
+That was fine, and then... everything became hard :fearful:. I was struggling to find another article to contribute to. For some reason, it felt like all the article I was coming across seemed okay as is. So, I pulled up my sleeves and went to Python's Wikipedia page. They had example code for factorial, which didn't handle user input errors. But I decided not to touch that, since I wasn't sure if handling user input was beginner friendly, which the article seemed to be. But then I came across the libraries section. This was full of very technical jargon, so I decided to give them hyperlinks. I think bullets of technical is just a hot mess, since 'multimedia' alone doesn't mean anything without context. Being able to see "content that uses a combination of different content forms such as text, audio, images, animations, video and interactive content" makes the word mean much more than if it was just thrown on there. So, I feel pretty good about this contribution :sunglasses:
+
+*** Preventing Election Fraud
+I read [[https://opensource.com/article/19/9/voting-fraud-open-source-solution?]["Election fraud: Is there an open source solution?"]] this weekend. We've discussed election fraud in the past, when Karen Sandler was speaking.
+
+Elections are as old as time. People would pick tribal chiefs, and we pick representatives. Back then, times were simpler, but nowadays, I have no idea how an election works. Back on November 4th, one would enter a voting booth located likely in a high school and bubble in their choices and leave. We don't get to see our votes through to the end of the process. In fact, we don't even get to know, much less see, the process. Everything is black boxed... to make it more 'secure' :eyes:
+
+The article brings up the point that most of the voting machines are using Windows 2000! And the newer ones are using Windows 7! It's pretty hard to buy a Windows 7 machine nowadays, Windows 10 has been out for a while. I've used Windows 7 back in the dark ages, it was awful. It was very prone to crashing and viruses even with proper usage. Windows 7 is actually losing maintenance support next year too! It's insane that voting software in 2019 still relies on such old technology.
+
+The article also mentions that some people's votes were not counted properly because of old machines. Apparently a machine changed a vote for Bill Waller his opponent, Tate Reeves. This was caught on camera, scandalous! Who knows how many elections have been won and lost due to malfunctioning machines. There's a scary quote in article "There are reports of machines misbehaving in this manner after almost every election.".
+
+Since we live in a society that's predominantly democratic (not the part! I mean the people choosing representatives), it makes sense that our software also have a say from everyone. Open source software would democratic software, and would have way less bugs and better security than a closed, black boxed, hot mess of code. At the very least it won't be reassigning votes :eyes:
+
+I brought this up before, but DARPA is building a $10 million, open source, secure voting system. If even the Defense Advanced Research Projects Agency is working on this, everyone should realize that we have a real problem with a tangible solution.
+
+So, I still approve of open source technology for election purposes :+1:
+
+*** Wappalyzer
+[[https://www.wappalyzer.com/][Wappalyzer]] is a little extension that shows which technologies are being used on a webpage. I downloaded it for fun, just as a 'ooh what's that cool technology' or 'woah, I expected them to use X technology over Y technology' moments. Those moments have indeed ocurred, for example the college uses Red Hat for its servers. I fully expected them to use Windows :eyes:. Anywho, I bring this up because I noted that [[https://opensource.com/][opensource.com]] uses [[https://www.drupal.org/][Drupal]] which is licensed under GPL. I thought that was neat and worth sharing.
+
+*** HFOSS
+This seems like a neat, no-brainer concept. I like the idea of humanitarian efforts being open source. Not only does that less bugs and more usable software, but the world can literally pitch in. I feel like someone in say California would be concerned with earthquakes, whereas someone in Japan would be more concerned with a tsunami. Of course that's a huge generalization and could be wrong, but my point still stands: open source brings people of different mindsets together. A relief or first responders' application would now be able to serve for both emergencies and we get both types of developers contributing to one project, meaning it gets done faster and better.
+
+*** The OSS Project
+Ahh, the OSS project. I'm still not done with the issue, but I've made massive breakthroughs. For the past couple of weeks, I struggling quite a bit with setting up a subdirectory 404, such that a 404 page that only activates when the location is nonexistent under =/resources/= and then a 404 page that activates for any other nonexistent page.
+
+I thought maybe Gatsby just wasn't rendering the pages properly, so I made a Netlify build for my forked branch [[https://admiring-yonath-eda964.netlify.com/][here]]. I'll probably end up killing the build later, but it's useful to have around for now.
+
+I consulted the Gastby docs, scavenged stackoverflow, and even went into source codes to no avail. Eventually, I caved in and went over to their [[https://gatsby.dev/discord][discord server]]. There, I ended up helping someone with their issue before I shot my own. It felt only right that a '#need-help' channel only have one issue at a time, and the person's issue was actually with Bulma and not Gatsby, so it was very easy for me to help.
+
+Anywho, I found this was a hot issue! Well, not my issue directly, but the issue that subpages would lose priority over more general pages even when the router for pages were setup properly. In fact, fixes in Gatsby were being made in real time. So, I updated and still failed... I either lost the index page resource page to the resource 404 page, or vice versa.
+
+I ended up having to debug in more mysterious ways. I had to use GraphQL! It was easy enough to use the browser IDE that Gatsby provides at =localhost/___graphql=. And I slowly figured out the issue with the following query at the end:
+
+#+BEGIN_SRC graphql
+query MyQuery {
+  allSitePage(filter: {}) {
+    edges {
+      node {
+        id
+        matchPath
+      }
+    }
+  }
+}
+#+END_SRC
+
+The =mathPath= on the pages seemed messed up, so I handled that. I voiced out my fix, and hopefully many people heard me. Hopefully the ddocs will also be updated, but I don't want to touch them since Gatsby is still actively being worked on.
+
+I also ended up having to remove part of resources' 404 page layout. This is because even though it looked fine locally as I tested it, it was completely borked on the Netlify instance, meaning it would be borked in the PR too (since the organization is also using Netlify for the website). The site is working on my Netlify instance currently with proper 404 redirects, and I easily have the window's URL already displayed in the resources' 404 page.
+
+The next steps I have to take in the project are making a GraphQL query to get the resource pages, and then calculating fuzzy matching using Levenshtein distance. Note, the issue mentioned Levenshtein distance between the URL and the resources list, but I'll try to make the code a bit modular because I know there are fuzzy matching algorithms.
+
+It isn't too much in my humble opinion, but it may take a week or two since I'm quite bombarded with work :stuck_out_tongue_closed_eyes:.
+
+*** End of Post
+You'll also found my posts are synced now :stuck_out_tongue_closed_eyes:. This is because I've changed the workflow. I now write the posts in org-mode and publish onto my site directly, and then export to markdown and publish on the OSSD class's site. Also, a hidden benefit of the export is that it automagically creates a table of contents. For my org-mode blog, I use a neat little package called [[https://github.com/snosov1/toc-org][toc-org]]. This makes the table of contents every time I save :heart_eyes:. I also use it for my org configuration file too and hope to incorporate in some readme files later :shipit:
+
+Cheers!
