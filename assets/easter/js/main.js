@@ -9,7 +9,7 @@ playAudio = function(file){
 var egg = new Egg();
 
 egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
-    var life = jQuery('<img src="static/img/1up.png"><img>');
+    var life = jQuery('<img src="/assets/easter/img/1up.png""><img>');
     life.appendTo('body').css({position: "fixed", top: "200px", right: "100px", "z-index": 99999999});
     life.animate({top: '50px', opacity: 0}, {
 	duration: 1000,
@@ -17,7 +17,7 @@ egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
             jQuery(this).remove();
 	}
     });
-    playAudio('static/audio/1up.wav');
+    playAudio('/assets/easter/audio/1up.wav');
 });
 
 
@@ -32,12 +32,12 @@ egg.addCode("esc,esc", function() {
       document.body.removeChild(div);
       }, 10000);
     */
-    var all = document.getElementById("all").outerHTML;
-    document.getElementById("all").innerHTML = "<h2>WOO!<br /><br /> YOU'VE DISCOVERED AN EASTER EGG<br /><br /> TRY KONAMI CODE<h2>";
-    document.getElementById("all").style.textAlign = "center";
-    window.setTimeout(function() {
-	document.getElementById("all").innerHTML = all;
-    }, 10000);
+  var all = document.getElementById("quote").innerHTML;
+  document.getElementById("quote").innerHTML = "<h2>WOO!<br /><br /> YOU'VE DISCOVERED AN EASTER EGG<br /><br /> TRY KONAMI CODE<h2>";
+  document.getElementById("quote").style.textAlign = "center";
+  window.setTimeout(function() {
+	document.getElementById("quote").innerHTML = all;
+  }, 10000);
 });
 
 egg.listen();
