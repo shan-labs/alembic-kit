@@ -1,20 +1,35 @@
 <script>
- const randomQuote = () =>{
+ const breakdownQuote = abstract => {
+   if (abstract.quotes != undefined){
+     return {
+       "name": abstract.name,
+       "quote": abstract.quotes[Math.floor(Math.random() * abstract.quotes.length)]
+     };
+   }
+
+   return abstract;
+ }
+
+ const randomQuote = () => {
    const QUOTES = {{site.data.quotes | jsonify}};
-   return QUOTES [Math.floor (Math.random() * QUOTES.length)];
+   return breakdownQuote(QUOTES[Math.floor(Math.random() * QUOTES.length)]);
  }
 
- const quote = randomQuote();
- quote.quote = '&ldquo;' + quote.quote + '&rdquo;';
+ const addQuote = () => {
+   const quote = randomQuote();
+   quote.quote = '&ldquo;' + quote.quote + '&rdquo;';
 
- if(document.getElementById("randomquote") != null){
-   document.getElementById("randomquote").innerHTML = `<p>${quote.quote}<br>--${quote.name}</p>`;
+   if(document.getElementById("randomquote") != null){
+     document.getElementById("randomquote").innerHTML = `<p>${quote.quote}<br>--${quote.name}</p>`;
+   }
+
+   if(document.getElementById("welcome-to-my-blog") != null){
+     document.getElementById("welcome-to-my-blog").innerHTML =
+       `<p class="whitetext highlighted" id="quote">${quote.quote}
+         <br>
+         --${quote.name}</p>`;
+   }
  }
 
- if(document.getElementById("welcome-to-my-blog") != null){
-   document.getElementById("welcome-to-my-blog").innerHTML =
-     `<p class="whitetext highlighted" id="quote">${quote.quote}
-        <br>
-        --${quote.name}</p>`;
- }
+ addQuote();
 </script>
