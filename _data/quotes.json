@@ -1,22 +1,22 @@
 [
   {
-    "quote": "Sic Parvis Magna",
-    "name": "Francis Drake"
+    "name": "Francis Drake",
+    "quote": "Sic Parvis Magna"
   },
 
   {
-    "quote": "All men dream - but not equally. Those who dream by night in the dusty recesses of their minds wake in the day to find that it was vanity. But the dreamers of the day are dangerous men, for they may act their dreams with open eyes, to make it possible. This I did.",
-    "name": "T.E. Lawrence"
+    "name": "T.E. Lawrence",
+    "quote": "All men dream - but not equally. Those who dream by night in the dusty recesses of their minds wake in the day to find that it was vanity. But the dreamers of the day are dangerous men, for they may act their dreams with open eyes, to make it possible. This I did."
   },
 
   {
-    "quote": "I did not tell half of what I saw, for I knew I would not be believed.",
-    "name": "Marco Polo"
+    "name": "Marco Polo",
+    "quote": "I did not tell half of what I saw, for I knew I would not be believed."
   },
 
   {
-    "quote": "For those who prove worthy, paradise awaits; for those who prove false, behold your grim fate.",
-    "name": "Thomas Tew"
+    "name": "Thomas Tew",
+    "quote": "For those who prove worthy, paradise awaits; for those who prove false, behold your grim fate."
   },
 
   {
@@ -25,42 +25,73 @@
   },
 
   {
-    "quote": "Yeokay",
-    "name": "Shan"
+    "name": "Donald Knuth",
+    "quote": "...premature optimization is the root of all evil (or at least most of it) in programming."
   },
 
   {
-    "quote": "Emacs btw",
-    "name": "Dreameh"
+    "movie": "A Goofy Movie",
+    "list": [
+      {
+        "name": "Bobby Zimmeruski",
+        "quote": "Do you ever wonder why we're always, like, wearing gloves?"
+      }
+    ]
   },
 
   {
-    "quote": "Emacs btw",
-    "name": "Igneous"
+    "name": "Louis Srygleyo",
+    "quote": "Without requirements or design, programming is the art of adding bugs to an empty text file."
   },
 
   {
-    "quote": "emacs btw",
-    "name": "Aiden"
+    "name": "Mosher’s Law of Software Engineering",
+    "quote": "Don’t worry if it doesn’t work right. If everything did, you’d be out of a job."
   },
 
   {
-    "quote": "... premature optimization is the root of all evil (or at least most of it) in programming.",
-    "name": "Donald Knuth"
+    "name": "E.W. Dijkstra",
+    "quotes": [
+      "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
+      "Program testing can be used to show the presence of bugs, but never to show their absence!"
+    ]
   },
 
   {
-    "quote": "Hello",
-    "name": "SunriseM"
+    "location": "TPH",
+    "list": [
+      {
+        "name": "Shan",
+        "quotes": ["Yeokay", "Emacs btw"]
+      },
+
+      {
+        "name": "Dreameh",
+        "quote": "Emacs btw"
+      },
+
+      {
+        "name": "Lgneous",
+        "quote": "Emacs btw"
+      },
+
+      {
+        "name": "Aiden",
+        "quote": "emacs btw"
+      },
+
+      {
+        "name": "SunriseM",
+        "quote": "Hello"
+      }
+    ]
   },
 
   {
-    "quote": "Do you ever wonder why we're always, like, wearing gloves?",
-    "name": "Bobby Zimmeruski"
-  },
-
-  {
-    "quote": "Я тихо-тихо пiдглядаю, І тiшуся собi, як бачу то, Шо страшить i не пiдпускає, А iншi п’ють тебе, як воду пiсок.",
-    "name": "Андрій Кузьменко"
+    "name": "Anonymous",
+    "quotes": [
+      "In order to understand recursion, one must first understand recursion.",
+      "The best thing about a boolean is even if you are wrong, you are only off by a bit."
+    ]
   }
 ]
