@@ -7,6 +7,10 @@
      };
    }
 
+   if(abstract.quote == undefined){
+     return breakdownQuote(abstract.list[Math.floor(Math.random() * abstract.list.length)]);
+   }
+
    return abstract;
  }
 
