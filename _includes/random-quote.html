@@ -4,13 +4,14 @@
    return QUOTES [Math.floor (Math.random() * QUOTES.length)];
  }
 
+ const quote = randomQuote();
+ quote.quote = '&ldquo;' + quote.quote + '&rdquo;';
+
  if(document.getElementById("randomquote") != null){
-   const quote = randomQuote();
    document.getElementById("randomquote").innerHTML = `<p>${quote.quote}<br>--${quote.name}</p>`;
  }
 
  if(document.getElementById("welcome-to-my-blog") != null){
-   const quote = randomQuote();
    document.getElementById("welcome-to-my-blog").innerHTML =
      `<p class="whitetext highlighted" id="quote">${quote.quote}
         <br>
