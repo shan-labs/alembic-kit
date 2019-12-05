@@ -1,0 +1,56 @@
+#+TITLE: OSSD Week 13
+#+layout: post
+#+categories: ossd-class hfloss
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+Didn't post last week due to a long weekend, so this covers 2 weeks worth instead. In the past 2 weeks, I read some fun OSSD articles, analyzed a [[https://opensource.com/life/15/8/weekly-open-source-news-august-7][humanitarian project]], and made a [[https://github.com/the-programmers-hangout/website/pull/189][PR]] on the OSSD project I chose.
+
+*** Table of Contents :TOC_7:
+    - [[#8-advantages-of-using-open-source-in-the-enterprise][8 Advantages of using Open Source in the Enterprise]]
+    - [[#musings-on-business-models-for-open-source-software][Musings on Business Models for Open Source Software]]
+    - [[#humanitarian-projects][Humanitarian Projects]]
+    - [[#wappalyzer-strikes-again][Wappalyzer Strikes Again!]]
+    - [[#the-oss-project][The OSS Project]]
+    - [[#end-of-post][End of Post]]
+
+*** 8 Advantages of using Open Source in the Enterprise
+ [[https://enterprisersproject.com/article/2015/1/top-advantages-open-source-offers-over-proprietary-solutions]["8 advantages of using open source in the enterprise"]] was also an interesting read. It mentioned quite a lot of big topics, but the ideas I liked the most is cost-effectiveness and ability to start small. Some of my peers are into graphic design and architecture. They pay for licenses to Adobe and Autodesk Suites. They're mostly learningto work with the softwares since they're essentially industry standards at this point.
+
+Or so they think! I'm starting to use [[https://www.figma.com/][Figma]], thanks to a friend. It's a great alternative which also happens to be OS independent... in fact there's a web app for it too. As for the CAD problems, well I'm not too much into that anymore. I used a student license back in high school, which I believe is a great if you're actively taking classes.
+
+The biggest benefits of open source software is its portability. I use a laptop as well as a desktop, so I like having software uniform between the two machines. Of course I do intensive work at home, but if I need to edit a vector image really quickly or open a pdf to sign it, should I be paying for multiple licenses? Sure there are deals for multiple machines, but software like [[https://www.figma.com/][Figma]] and [[https://okular.kde.org/][Okular]] have got my back.
+
+In fact, I may categorize these open softwares better than the paid counterparts. First of all, they're available on [[https://aur.archlinux.org/][AUR]], so I can easily download them. Next, they're so much more easier to use. I recently encountered a [[https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html][PDF Portfolio]], which I like to think of as "a PDF of PDFs". If one tries to open this in the browser, all they'd see is a message "For the best experience, open this PDF portfolio in Acrobat X or Adobe Reader X, or later." and a button to the Adobe download site. When opening it with the Adobe Acrobat, I simply couldn't print the documents! The option simply disappeared for me.
+
+Now I suppose this could be due to privacy reasons or simply a money scheme. Who knows? But, if you open the portfolio in Okular, you get a neat option saying it appears the PDF is a portfolio with attachments and asking to separate the PDFs right off the bat! As it should be! It does the equivalent of =pdfdetach -saveall filename.pdf=, which I learned about later. Now with separated PDFs, I could easily print and do my paperwork (which I still need to finish up :sweat_smile:).
+
+*** Musings on Business Models for Open Source Software
+[[https://spot.livejournal.com/327801.html]["Musings on business models for open source software"]] was an interesting read. I like the economic of side of open source. I suppose I'll discuss the points I /didn't/ know much about here.
+
+One of the important points that stood out to me was "Subscription Offerings". I believe once you purchase a product, it ought to be yours to use freely. Ergo, I detest subscription based software, but subscription based services as an add on is great. You're not paying to use the software, because you own it. Service like onsite training or server management just make your life easier, but they're not necessary. If you already know how to use software, you may not even have to pay at all (except maybe in donations :smirk:).
+
+One of the points that stood out to me was FUD. I was surprised FUD (fear, uncertainty, and doubt) would be a way open source markets made money. It kind of felt like the post was attacking MongoDB, but at the same time, FUD isn't very open source of them. Open source is all about the community, and this kind of tactic isn't cool.
+
+TideLift looks very interesting and appealing. I'm going to actually research a bit more into it.
+
+*** Humanitarian Projects
+I mentioned humanitarian projects in my blog post last time. [[https://opensource.com/tags/humanitarian][opensource.com]] has a neat tag for them, so I'll zero into analyzing a specific one.
+
+I looked at this post: [[https://opensource.com/article/17/10/enable-update]["How a university's 3D-printed prosthetics club provides devices for amputees"]]. This piece discussed the open source approach to design. It's kind of wild how schematics on prosthetics aren't all open source. Why close source information like this? By having an open source approach to 3D-printed prosthetics, there's more data to work with. Many developers of different regions are about to come together to solve a common problem. Different people may have different insights, for example someone from an underdeveloped country may want to focus on low costs while someone from a better developed country may focus on flexibility and finer mechanics of the prosthetic. With these different mindsets together, we could gain a nice balance of areas and a better prosthetic overall.
+
+In addition, it's important to note the article mentions university. These aren't industry experts making a change, these are people who could easily be you or me making a change. They're in contact with players like Innovation Co-Lab and OSPRI (Open Source Pedagogy, Research and Innovation). It's kind of motivating to hear fellow students focused on altruism and able to sit on the big boys table.
+
+*** Wappalyzer Strikes Again!
+Last time I noticed [[https://opensource.com][opensource.com]] used Drupal, and this time I noticed it also uses Percona. According to Wikipedia, it's a "free, fully compatible drop in replacement for Oracle MySQL". Sometimes Wappalyzer picks up on technology it may not have before, so it's fun to check a site routinely.
+
+*** The OSS Project
+It's done. I made the [[https://github.com/the-programmers-hangout/website/pull/189][PR]] and it was merged after being squashed (oh, the commits!). I'm quite happy with the way things turned out.
+
+I finished up the Levenshtein distance algorithm within a day using [[https://en.wikipedia.org/wiki/Levenshtein_distance][Wikipedia's pseudocode]] for it. A couple of NaNs in the array stressed me out, but I learned it was due to JS/ TS's quirks on 2D arrays and I needed to have a pre-populated array to begin with. Hmm, there will be more on this later, since I have to give to a small presentation on it as well. So, due to the post being so long, more material from the presentation, and free material for the next post as well as a hook for it, tune in for the next post!
+
+*** End of Post
+Welp, this is the last post for OSSD class. It's been a wild ride, and I had a great time. I do hope to continue working on (H)(F)(L)OSS, so catch my next posts on the [[https://khinshankhan.com][main blog]]. See ya soon! :shipit:
+
+Cheers!
