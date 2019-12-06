@@ -51,6 +51,6 @@ It's done. I made the [[https://github.com/the-programmers-hangout/website/pull/
 I finished up the Levenshtein distance algorithm within a day using [[https://en.wikipedia.org/wiki/Levenshtein_distance][Wikipedia's pseudocode]] for it. A couple of NaNs in the array stressed me out, but I learned it was due to JS/ TS's quirks on 2D arrays and I needed to have a pre-populated array to begin with. Hmm, there will be more on this later, since I have to give to a small presentation on it as well. So, due to the post being so long, more material from the presentation, and free material for the next post as well as a hook for it, tune in for the next post!
 
 *** End of Post
-Welp, this is the last post for OSSD class. It's been a wild ride, and I had a great time. I do hope to continue working on (H)(F)(L)OSS, so catch my next posts on the [[https://khinshankhan.com][main blog]]. See ya soon! :shipit:
+We're nearing the end of the semester and I just want to say it's been fun thus far. Made a small mistake on the first push of this post, but it's been resolved now :sweat_smile:
 
 Cheers!
