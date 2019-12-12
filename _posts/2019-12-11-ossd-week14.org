@@ -1,0 +1,40 @@
+#+TITLE: OSSD Week 14
+#+layout: post
+#+categories: ossd-class
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+Oof, the time has finally come: last post for the OSSD class. As a sort of catharsis, this post will be short and reflective.
+
+*** Table of Contents :TOC_7:
+    - [[#empty-promises][Empty Promises?]]
+    - [[#evolution-through-class][Evolution through Class]]
+    - [[#future-ossd-contributions][Future OSSD Contributions]]
+    - [[#end-of-post][End of Post]]
+
+*** Empty Promises?
+Okay, so I promised some more about the 404 page PR, but I'm going to hold it off again! I'm presenting tomorrow, so I feel like my thoughts would be much more in order afterwards, ergo going to put it off for another week. I'm going to promise pictures this time though!
+
+*** Evolution through Class
+In my first OSSD class post, I jokes around about emacs sucking me into open source, but looking around, I can't imagine myself outside of the open source community.
+
+Throughout this class, we learned various topics like open source organizations and projects, git workflows, repository analysis, Linux commands, and licenses. All these changed the way I view open source now.
+
+To start with, open technology vs closed technology (of the same types) really blew my mind away. I didn't realize that Google Maps was proprietary. It's kind of crazy how data like maps could be closed off. OSM and Wikipedia really blew my mind. I was used to using Google Maps and  Wikipedia, but now I'm looking at OSM a bit more and I truly appreciate Wikipedia's community.
+
+If one just looked around, they'll find almost every software is licensed. I recently found that =arandr=, the software I use to project my screen around, is licensed under GPL. Honestly, before this class, I didn't really care about licenses. In most terms and conditions, I would skip to the end and hit 'I accept'. But now, I understand what these different kinds of licenses mean and the implications they hold. Since =arandr= is licensed under GPL, the community's users can continually benefit together, instead of people continuously reinventing the tire to no real net gain. What I'm trying to get at is that in the beginning of this course, I thought of open source as just work that a I can use free of charge with a cool development community hand in hand, but now I realize there's a lot more behind the works.
+
+Having speakers come in also accentuated the class experience. There's just something different about reading Bloomberg's open source efforts vs. hearing about it straight from Kevin Fleming, Member of the CTO Office at Bloomberg LP. I enjoyed all our speakers, and I'm extremely grateful they took the time out of their [probably] busy schedules to meet with us and /just talk/. I think talking about open source like this isn't just good for evangelism, but also for helping us broaden our minds. For example, without Karen Sandler's talk, I'm not sure if I would have thought too much about the open source movement on the medical side of things.
+
+In terms of expectations, this course really taught me some good life lessons. I think I may even refer to the class slides and resources every so often even after the semester ends.
+
+*** Future OSSD Contributions
+Hmm, I definitely want to stay on the open source community since I see myself using a lot of open source software in the future. I'm not sure exactly which kinds of contributions I'll be doing, but a little bit of everything I suppose.
+
+I suppose I'll also mention my 'reach contribution': Firefox. I'm interested in specifically this [[https://bugzilla.mozilla.org/show_bug.cgi?id=1320757][3 year old issue]] with active discussion. Private containers are a somewhat heavily requested feature, so I'm surprised it hasn't been dealt with. One of the issues with getting started on this is that the code base is simply far too big to immediately jump in. But I want to try and ease into it, so it may end up day taking weeks, months, or years. It also seems they use mercurial, helping me realize I should learn more version controls than just git.
+
+*** End of Post
+Welp, this is the last post for OSSD class. It's been a wild ride, and I had a great time. I do hope to continue working on (H)(F)(L)OSS, so catch my next posts on the [[https://khinshankhan.com][main blog]]. See ya soon! :shipit:
+
+Cheers!
