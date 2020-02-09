@@ -1,0 +1,84 @@
+#+TITLE: OSSD Week 15?
+#+layout: post
+#+categories: ossd-class
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+Oops, OSSD class ended already! But still, we have some unfinished business to discuss if you've been following the previous posts.
+
+*** Table of Contents :TOC_7:
+    - [[#empty-promises][Empty Promises?]]
+    - [[#the-problem][The Problem]]
+    - [[#what-i-needed][What I needed]]
+    - [[#roadblocks][Roadblocks]]
+    - [[#the-outcome][The Outcome]]
+    - [[#end-of-post][End of Post]]
+
+*** Empty Promises?
+    Yep. Still not going to finish off about the TPH PR, but hopefully I'll convince you why. I'll start off by dissecting and explaining what I did
+    thus far.
+
+*** The Problem
+    At the time, there was a singular 404 page. That's not fun and also not really helpful. If the user makes a typo for a resource, perhaps we should
+    recommend a list of possible pages they may have meant. This will make the user experience much better and it shouldn't be /too/ difficult. So, simply
+    stated, the goal was to make a custom 404 page for the =resource= collection of TPH.
+
+*** What I needed
+    Okay, so the website was made using Gatsby. This is great, it was fully integrated with GraphQL, which would let me query resources. I needed a way
+    to get the current URL, which would be considered the 'user input'. The =Location= component from =@reach/router= made that easy enough. Next I would
+    need a way to check 'how off a resource is from user input'. I'm somewhat interested in NLP, so this PR also interested me. I went with what the
+    owner provided: [[https://en.wikipedia.org/wiki/Levenshtein_distance][Levenshtein distance]]. There are other algorithms, perhaps better algorithms out there, but for this use case, it didn't really
+    matter.
+
+*** Roadblocks
+    So... everything from the previous list wasn't actually thought out beforehand haha. But figuring out [parts of] that list on the spot is just part
+    of the job I guess. Disregarding that, I encountered quite a bit of problems!
+
+    I was using this Gatsby article, [["Creating Prefixed 404 Pages for Different Languages"]], as sort of a guide to figure out how I would implement the
+    custom 404 page to take priority at certain times (in my case, when the url was the =[website]/resources/[user]=, where =[website]= is the base url and
+    =[user]= is the resource the user is trying to access). This was a problem with Gatsby and not me :triumph:. Not many people get to blame the framework haha.
+    It turns out their router wasn't taking precedence properly, and they fixed it in the latest versions. So I figured out how to work with out and
+    viola, we're in business.
+
+    I also struggled with semantic differences. The Levenshtein distance is great, but it tells me how 'off' the words are. That is, how many single
+    character edits it would take to go from one word to the other. So... a couple of examples in a weird quotes format to exemplify single character
+    edits
+
+    #+begin_quote
+    lava -> java
+    #+end_quote
+
+    #+begin_center
+    Substitute 1 character (=l= to =j=)
+    #+end_center
+
+    #+begin_quote
+    tail -> tails
+    #+end_quote
+
+    #+begin_center
+    Add 1 character (trailing =s=)
+    #+end_center
+
+    #+begin_quote
+    tails -> tail
+    #+end_quote
+
+    #+begin_center
+    Remove 1 character (trailing =s=)
+    #+end_center
+
+    I needed to figure out a good upper bound to filter possible matches by. That is to say, a word like =resource= should match with =resources= since
+    it's only 1 single character edit, but =resource= should not match with =coffee= since it's many single character edits 'away'. At this point, I just
+    went with =8= single character edits after consulting some of the TPHers. It was a big whatever, they were excited this was even happening!
+
+*** The Outcome
+    So... it works. Yay. Here's an [[https://theprogrammershangout.com/resources/cpp/multidimensional-arrayshewwo][example]] of it in action.
+
+*** End of Post
+    So... I definitely didn't try too hard in this post. But, to explain why: the logic behind the 404 is actually very extensible. It should be
+    possible to refactor the logic to work on any collection. TPH also has a spotlights collection, so I hope to figure it out and have it apply there
+    too. I guess expect more 404 work in the future.
+
+    Happy holidays too!
