@@ -1,0 +1,50 @@
+#+TITLE: What Happened to the Posts?
+#+layout: post
+#+categories: apology
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+Story time: Something strange happened... you see some posted dated from before you remember checking the site. Nothing makes sense... why?
+
+*** Table of Contents :TOC_7:
+    - [[#the-lies][The Lies]]
+    - [[#so-why-are-the-posts-backdated][So, why are the posts backdated?]]
+    - [[#will-this-happen-again][Will this happen again?]]
+    - [[#answer-the-question][Answer the question!]]
+    - [[#end-note][End Note]]
+
+*** The Lies
+    I, oh so boldly, stated I wouldn't be doing any malicious backdating wayyy back when. And I'm not! I didn't mean for the posts to be backdated.
+
+*** So, why are the posts backdated?
+    Hehe, funny story. So, for some reason, I started writing these posts on my desktop, which I never use as it's Windows and I'm usually on the move.
+    In addition, a bootcamp for work as well as juggling work and college afterwards kept me a little busy for quite a while. /Oh yeah, I'm an actual
+    "Software Engineer Intern" now/. I finally got around to it due to a true friend reminding me consistently /thanks Dreameh/!
+
+*** Will this happen again?
+    Erm, another funny story. I'm in the process of retroactively modifying a few posts.
+
+    I'm not sure if you've noticed, but lately posts have a =Table of Contents=. They look nice and they're pretty helpful, so I'm adding them to all the
+    posts!
+
+    Also, I've been informed some of my links are broken are badly rendered (likely due to markdown -> org). So, I need to fix those too.
+
+    I've also been told that my grammar is somewhat... missing... in some posts. In addition, they lack uniformity? Definitely should work on that.
+
+*** Answer the question!
+    So, some posts will receive a cleanup, but you shouldn't see any completely new posts pop up out of nowhere. Another thing you may see though is me
+    talking about old stuff. And that's just going to be because I either didn't have time to post about it, didn't have access at the time and forgot,
+    or I just understood it well enough to even start a post about it.
+
+*** End Note
+    All in all, I just like writing, though I'm kind of shy. Keeping up a blog is a little bit of effort, but it's effort I like putting in. But I also
+    like doing a lot of different things, so sometimes the priorities cause a starvation queue. In fact, recently I've said
+
+    #+begin_quote
+    I've been trying to keep a blog up, but it's usually a couple of bursts and then some time off on that scene.
+    #+end_quote
+
+    Anywho, hope to post again soon. Likely won't be consistent, but it's alright since it's a passion and hobby. I'd recommend subscribing via RSS :eyes:
+
+    Cheers!
