@@ -32,6 +32,8 @@ Story time: Something strange happened... you see some posted dated from before 
 
     I've also been told that my grammar is somewhat... missing... in some posts. In addition, they lack uniformity? Definitely should work on that.
 
+    Also, I want to focus on adding a few more features to the site too.
+
 *** Answer the question!
     So, some posts will receive a cleanup, but you shouldn't see any completely new posts pop up out of nowhere. Another thing you may see though is me
     talking about old stuff. And that's just going to be because I either didn't have time to post about it, didn't have access at the time and forgot,
