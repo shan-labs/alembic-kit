@@ -1,0 +1,42 @@
+#+TITLE: New Years Resolution 2020
+#+layout: post
+#+categories: nyr
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+So... new day/ week/ month/ year/ decade, new me? Since writing down resolutions may help one to be more driven or motivate others, here are mine:
+
+*** Table of Contents :TOC_7:
+    - [[#resolution-1][Resolution 1]]
+    - [[#resolution-2][Resolution 2]]
+    - [[#resolution-3][Resolution 3]]
+    - [[#resolution-4][Resolution 4]]
+    - [[#resolution-5][Resolution 5]]
+    - [[#end-note][End Note]]
+
+*** Resolution 1
+Use more [[https://magit.vc/][magit]]. I've heard quite a lot of testimonials. I also found [[https://www.youtube.com/watch?v=rCMh7srOqvw&list=PLhXZp00uXBk4np17N39WvB80zgxlZfVwj][this series]], where the last three videos go over magit. I find Zaiste's voice to be very nice as well, so I'll hopefully take in the information instead of falling asleep or impatiently waiting for the videos to end.
+
+*** Resolution 2
+Work out a bit! Doesn't have to be a full on gym session... I'm thinking about just a routine to keep me active. One of my favorite quotes is:
+
+#+begin_quote
+A sound soul dwells within a sound mind and a sound body.
+#+end_quote
+
+#+BEGIN_CENTER
+Atsushi Ōkubo, Soul Eater
+#+END_CENTER
+
+*** Resolution 3
+Read a bit more. Refer to the quote above! Thinking about a few good fiction books to get back in the groove of physical text (sometimes it's good to move away from technology and unwind).
+
+*** Resolution 4
+Languages... I was super invested before, but somehow I've stopped. I didn't even realize it until this post. I hope to try and figure out some basics again, feels like I've forgotten all I learned.
+
+*** Resolution 5
+Try to keep posting!
+
+*** End Note
+These goals seem easy enough, and hopefully they won't just become habit, but they'll evolve to become.
