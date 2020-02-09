@@ -23,11 +23,8 @@ So... new day/ week/ month/ year/ decade, new me? Since writing down resolutions
 
     #+begin_quote
     A sound soul dwells within a sound mind and a sound body.
+    -- Atsushi Ōkubo, Soul Eater
     #+end_quote
-
-    #+BEGIN_CENTER
-    Atsushi Ōkubo, Soul Eater
-    #+END_CENTER
 
 *** Resolution 3
     Read a bit more. Refer to the quote above! Thinking about a few good fiction books to get back in the groove of physical text (sometimes it's good to move away from technology and unwind).
