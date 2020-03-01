@@ -23,7 +23,8 @@ Decided to make a small blog about something I did recently: set up a second Git
 
     It /is/ worth noting that GitHub's ToS has the following lines:
     #+begin_quote
-    One person or legal entity may maintain no more than one free Account (if you choose to control a machine account as well, that's fine, but it can only be used for running a machine).
+    One person or legal entity may maintain no more than one free Account (if you choose to control a machine account as well, that's fine, but it can
+    only be used for running a machine).
     #+end_quote
     Not sure how much they care about this, but my personal is actually not a free account, so I don't consider myself breaking the ToS... but at the
     same time I'd rather let that disclaimer sit there just in case. It's better to make [[https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations][GitHub organizations]] perhaps, but it wouldn't really solve
@@ -36,7 +37,7 @@ Decided to make a small blog about something I did recently: set up a second Git
     step =2=, for your second account, do /not/ leave the default name. I like the idea of naming it =~/.ssh/USERNAME=, replacing =USERNAME= with the GitHub
     username.
     1. ssh-keygen -t rsa -b 4096 -C "hello@gmail.com"
-       1. Replace the email with whatever email you used to sign up for github
+       1. Replace the email with whatever email you used to sign up for GitHub
        2. the quotes matter around the email
     2. It'll ask for filename to save in (default is fine, just press enter)
        1. you'll want to start keeping track when you have multiple accounts/ servers to manage
@@ -86,10 +87,22 @@ mkdir -p ~/second
     #+begin_src
 [user]
 	name = "second"
-	email = "second@protonmail.com"
+	email = "second@gmail.com"
 [core]
 	sshCommand = "ssh -i ~/.ssh/second"
     #+end_src
+    What this bit does is set the =user.name= to =second= and =user.email= to =second@gmail.com=. Now the information shown when you push is changed! But, the
+    =sshCommand = "ssh -i ~/.ssh/second"= is the bit that actually uses the ssh key we generated for this second account. =ssh= we're kind of familiar
+    with, it uses encrypted key pairs to do a secure push. what the =i= flag does is allow you to specify an =identity_file= which from the man page is:
+    #+begin_quote
+    Selects a file from which the identity (private key) for public key authentication is read.  The default is ~/.ssh/id_dsa, ~/.ssh/id_ecdsa,
+    ~/.ssh/id_ecdsa_sk, ~/.ssh/id_ed25519, ~/.ssh/id_ed25519_sk and ~/.ssh/id_rsa. Identity files may also be specified on a per-host basis in the
+    configuration file.  It is possible to have multiple -i options (and multiple identities specified in configuration files).  If no certificates
+    have been explicitly specified by the CertificateFile directive, ssh will also try to load certificate information from the filename obtained by
+    appending -cert.pub to identity filenames.
+    #+end_quote
+
+    Andddd we're chilling. Now everything globally is using =id_rsa= and only in the =~/second/= directory, it'll use the =second= account information.
 *** End Note
     Now remember: use this guide wisely. Obviously abusing said information is a huge no no, and it's on you really. Don't try to set up bots or
     crawlers. Try to pay for your accounts. GitHub is a decent service imho, so it's worth it.
