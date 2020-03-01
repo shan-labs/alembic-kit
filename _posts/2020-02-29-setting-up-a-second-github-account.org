@@ -11,6 +11,7 @@ Decided to make a small blog about something I did recently: set up a second Git
     - [[#preface--why][Preface & Why]]
     - [[#make-a-github-account][Make a GitHub Account]]
     - [[#ssh-keys][SSH Keys]]
+    - [[#setting-up-smart-ssh-pairs][Setting up Smart SSH Pairs]]
     - [[#end-note][End Note]]
 
 *** Preface & Why
@@ -27,9 +28,13 @@ Decided to make a small blog about something I did recently: set up a second Git
     Not sure how much they care about this, but my personal is actually not a free account, so I don't consider myself breaking the ToS... but at the
     same time I'd rather let that disclaimer sit there just in case. It's better to make [[https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations][GitHub organizations]] perhaps, but it wouldn't really solve
     my issue at hand, nor a lot people's... so tread with caution is all I can say.
-
 *** Make a GitHub Account
+    Simple enough, navigate over to [[https://github.com/join?source=login][GitHub's signup page]] and sign up for your accounts. Note: as of writing this post and to my knowledge, you can't
+    be logged into multiple accounts at once. Easily solved with different browsers, or utilizing incognito.
 *** SSH Keys
+    These steps should be ran per account on your computer. I think you just need =ssh= for this, but it'd be a good idea to have =git= installed too. For
+    step =2=, for your second account, do /not/ leave the default name. I like the idea of naming it =~/.ssh/USERNAME=, replacing =USERNAME= with the GitHub
+    username.
     1. ssh-keygen -t rsa -b 4096 -C "hello@gmail.com"
        1. Replace the email with whatever email you used to sign up for github
        2. the quotes matter around the email
@@ -52,6 +57,46 @@ Decided to make a small blog about something I did recently: set up a second Git
     8. Choose SSH and GPG keys from the left menu
     9. Click the green New SSH key button
     10. Title it whatever like home or something and paste the contents from before into key section and confirm
-    11. You should be done. Try running =ssh -T git@github.com= from command line and you'll receive a success message of sorts (if your username isright, you did it right).
-       1. A warning might pop up the first time, just say yes and it'll work fine
+    11. You should be done. Try running =ssh -T git@github.com= from command line and you'll receive a success message of sorts (if your username is right, you did it right).
+        1. A warning might pop up the first time, just say yes and it'll work fine
+*** Setting up Smart SSH Pairs
+    Now, if you'll notice, whenever using ssh clone or something, git tried to use your default account! Yes, this is to be expected. Let's fix it!
+    For the sake of not doxxing my invested name just yet... let's say my second account's name is =second=.
+
+    Okay, so the cleanest resolution I've seen is have a directory called =second=, in which your configuration kicks in. This way, you have a global,
+    then scoped git configs.
+
+    Let's execute
+    #+begin_src
+mkdir -p ~/second
+    #+end_src
+    Dissecting this command: =mkdir= makes a directory. the =p= flag makes any parent directories if need be... you probably won't need that flag in
+    retrospect. And =~/second= is telling =mkdir= to make a directory called =second= in the home directory (=~= is an alias, you can type in =echo ~= to
+    view what your home directory is... unless it's messed up somehow).
+
+    Now in your =~/.gitconfig= add in this bit to the bottom (don't overwrite the file!):
+    #+begin_src
+[includeIf "gitdir:~/second/"]
+	path = ~/second/.gitconfig
+    #+end_src
+    What this does is use the =.gitconfig= located in =~/second/.gitconfig= whenever you're using the =~/second/= path. This means if you ran a ssh clone
+    while in that directory, it will utilize the configuration in =~/second/.gitconfig= or else the global.
+
+    Now, let's actually make it utilize the right information by throwing this into =~/second/.gitconfig=.
+    #+begin_src
+[user]
+	name = "second"
+	email = "second@protonmail.com"
+[core]
+	sshCommand = "ssh -i ~/.ssh/second"
+    #+end_src
 *** End Note
+    Now remember: use this guide wisely. Obviously abusing said information is a huge no no, and it's on you really. Don't try to set up bots or
+    crawlers. Try to pay for your accounts. GitHub is a decent service imho, so it's worth it.
+
+    But, if anything, most of the instructions here work for [[https://about.gitlab.com/][GitLab]]. In my small search of their [[https://about.gitlab.com/terms/][ToS]] nothing popped up about keeping a single account.
+    In this guide, just you're going to have to use intuition to know what to replace, because I don't see myself making a GitLab guide as I don't use
+    it.
+
+    With that, you'll notice that the table of contents and comment section is coming along nicely. Feel free to ask questions if need be, or else
+    enjoy :+1:
