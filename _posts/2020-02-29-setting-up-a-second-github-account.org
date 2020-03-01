@@ -1,0 +1,52 @@
+#+TITLE: Setting up a Second GitHub Account
+#+layout: post
+#+categories: github ssh
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+Story time: Something strange happened... you see some posted dated from before you remember checking the site. Nothing makes sense... why?
+
+*** Table of Contents :TOC_7:
+    - [[#preface--why][Preface & Why]]
+    - [[#make-a-github-account][Make a GitHub Account]]
+    - [[#ssh-keys][SSH Keys]]
+    - [[#end-note][End Note]]
+
+*** Preface & Why
+    I thought it might be a good idea to include a preface for this guide. It isn't meant for everyone and their moms, it's meant for devs who need a
+    second GitHub account. There could be a multitude of reasons as to why you may need one. They may include having a personal one and one for work/
+    school, too shy to let your name out when making PRs/ issues, perhaps participating in events like [[https://adventofcode.com/][Advent of Code]]/ [[https://www.hackerrank.com/][HackerRank]]/ [[https://www.codewars.com/][Codewars]] and not
+    wanting your personal information to be shown on a discord server you're playing with (something along those lines...), etcetera etcetera. Mine is
+    that I wanted to test some GitHub features which I couldn't do with just one account... thought I'm kind of invested in the name now :stuck_out_tongue:
+
+    It /is/ worth noting that GitHub's ToS has the following lines:
+    #+begin_quote
+    One person or legal entity may maintain no more than one free Account (if you choose to control a machine account as well, that's fine, but it can only be used for running a machine).
+    #+end_quote
+    Not sure how much they care about this, but my personal is actually not a free account, so I don't consider myself breaking the ToS... but at the
+    same time I'd rather let that disclaimer sit there just in case. It's better to make [[https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations][GitHub organizations]] perhaps, but it wouldn't really solve
+    my issue at hand, nor a lot people's... so tread with caution is all I can say.
+
+*** Make a GitHub Account
+*** SSH Keys
+    1. ssh-keygen -t rsa -b 4096 -C "hello@gmail.com"
+      - Replace the email with whatever email you used to sign up for github
+      - the quotes matter around the email
+    2. It'll ask for filename to save in (default is fine, just press enter)
+      - you'll want to start keeping track when you have multiple accounts/ servers to manage
+    3. It'll ask for a passphrase (this is if you leave your computer unattended... honestly you can leave it blank, just press enter)
+    4. Confirm passphrase (enter again if you left the first one blank, else type it)
+    5. Now cd ~/.ssh
+    - this should have a file called id_rsa and id_rsa.pub (or whatever filename you gave it in step 2)
+    - can view files using ls
+    - you NEVER share the id_rsa file, only the .pub one
+    6. Copy the contents of the id_rsa.pub file (or whatever the .pub file is named)
+    - you can go cat id_rsa.pub and and highlight the contents and press ctr + shift + c to copy, or open it in your favorite text editor and copy
+    7. Login to Github (website) and go to setting (arrow dropdown on your profile picture on the right)
+    8. Choose SSH and GPG keys from the left menu
+    9. Click the green New SSH key button
+    10. Title it whatever like home or something and paste the contents from before into key section and confirm
+    11. You should be done. Try running ssh -T git@github.com from command line and you'll receive a success message of sorts (if your username is right, you did it right).
+    - A warning might pop up the first time, just say yes and it'll work fine
+*** End Note
