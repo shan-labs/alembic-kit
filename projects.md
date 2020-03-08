@@ -21,30 +21,85 @@ title: Projects
 - ![Yay](/assets/imgs/works/yay.gif) = Unfold details
 - ![Karen Blush](/assets/imgs/works/karenblush.gif) = Refold details
 <hr>
+
+{%
+    include project.html
+    title="NLP TF-IDF Hadoop"
+    pitch='NLP analysis of Term Frequency - Inverse Document Frequency using Hadoop'
+    description="
+    [DESCRIPTION WIP]
+    "
+    links="Github, https://github.com/kkhan01/nlp-tf-idf-hadoop"
+    img=false
+%}
+<hr>
+{%
+    include project.html
+    title="Hetio Net"
+    pitch='Big Data Analysis of <a href="https://het.io/">Hetionet</a> - An integrative network of biomedical knowledge'
+    description="
+    A big data project leveraging document based (<b>MongoDB</b>) and graph based (<b>Neo4j</b>) databases
+    =| Populate and query databases for relationships between compounds and diseases [relationships which aren’t readily available]
+    "
+    links="Github, https://github.com/kkhan01/hetio-net"
+    img=false
+%}
+<hr>
 {%
     include project.html
     title="Finder"
-    pitch="Cool"
+    pitch="Fiverr + Tinder: Tinder, but for Jobs."
     description="
-    Nulla iaculis nisl sed ex vulputate gravida. Integer id gravida ex, eu lacinia enim. Integer
-    =| tristique diam sit amet ornare molestie. Sed tempor sagittis dolor ut elementum. Quisque ac
-    =| varius mauris. Donec semper velit eget lobortis gravida. Suspendisse dapibus suscipit enim eu
-    =| sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
+    [DESCRIPTION WIP]
     "
-    img="https://cdn.pixabay.com/photo/2019/11/08/11/56/cat-4611189__340.jpg"
-    links="Github, https://github.com/kkhan01/project_angstrom; Live, http://angstrom.stuycs.org/"
+    links="Github, https://github.com/kkhan01/Finder"
+    img=false
 %}
 <hr>
 {%
     include project.html
     title="Project Ångström"
-    pitch="Cool"
+    pitch=false
     description="
-    Nulla iaculis nisl sed ex vulputate gravida. Integer id gravida ex, eu lacinia enim. Integer
-    =| tristique diam sit amet ornare molestie. Sed tempor sagittis dolor ut elementum. Quisque ac
-    =| varius mauris. Donec semper velit eget lobortis gravida. Suspendisse dapibus suscipit enim eu
-    =| sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
+    FTC Scouting Tool for Relic Recovery
+    =| Scouting site for FIRST Tech Challenge (FTC) use as well as for local teams to use internally
+    =| Provides statistical analysis of data from The Orange Alliance to allow for greater insights
     "
-    img="https://cdn.pixabay.com/photo/2019/11/08/11/56/cat-4611189__340.jpg"
     links="Github, https://github.com/kkhan01/project_angstrom; Live, http://angstrom.stuycs.org/"
+    img=false
+    video="SG_ar4D-uIM"
+%}
+<hr>
+{%
+    include project.html
+    title="Brain Battles"
+    pitch=false
+    description="
+    [DESCRIPTION WIP]
+    "
+    links="Github, https://github.com/kkhan01/This_Name_is_Copyrighted-Brain_Battles; Live"
+    img=false
+    video="RXbPhHFDLuc"
+%}
+<hr>
+{%
+    include project.html
+    title="Polybius"
+    pitch=false
+    description="
+    [DESCRIPTION WIP]
+    "
+    links=false
+    img=false
+%}
+<hr>
+{%
+    include project.html
+    title="Poober"
+    pitch=false
+    description="
+    [DESCRIPTION WIP]
+    "
+    links=false
+    img=false
 %}
