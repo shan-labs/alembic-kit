@@ -1,5 +1,8 @@
 <details>
   <summary><h3>{{ include.title | default: Project }}</h3></summary>
+  {% if include.pitch %}
+  <blockquote><p>{{include.pitch}}</p></blockquote>
+  {% endif %}
   <p>
     {% assign broken_descript = {{include.description}} | split: "=| " %}
 

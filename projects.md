@@ -33,11 +33,12 @@ title: Projects
 {%
     include project.html
     title="Some name"
+    pitch="Cool"
     description="
     Nulla iaculis nisl sed ex vulputate gravida. Integer id gravida ex, eu lacinia enim. Integer
-    tristique diam sit amet ornare molestie. Sed tempor sagittis dolor ut elementum. Quisque ac
-    varius mauris. Donec semper velit eget lobortis gravida. Suspendisse dapibus suscipit enim eu
-    sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
+    =| tristique diam sit amet ornare molestie. Sed tempor sagittis dolor ut elementum. Quisque ac
+    =| varius mauris. Donec semper velit eget lobortis gravida. Suspendisse dapibus suscipit enim eu
+    =| sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
     "
     img="https://cdn.pixabay.com/photo/2019/11/08/11/56/cat-4611189__340.jpg"
     links="Github, https://github.com/kkhan01/project_angstrom; Live, http://angstrom.stuycs.org/"
