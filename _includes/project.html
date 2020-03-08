@@ -5,17 +5,18 @@
   </p>
 
   {% if include.links %}
-  <p>
-    Links:
-    {% assign links = {{include.links}} | split: "; " %}
-    {% for item in links %}
-    {% assign destructured = item | split: ", " %}
-    <a href="{{ destructured[1] }}">{{ destructured[0] }}</a>
-    {% if forloop.rindex != 1 %}
-    ●
-    {% endif %}
-    {% endfor %}
-  </p>
+  <center>
+    <p>
+      {% assign links = {{include.links}} | split: "; " %}
+      {% for item in links %}
+      {% assign destructured = item | split: ", " %}
+      <a href="{{ destructured[1] }}">{{ destructured[0] }}</a>
+      {% if forloop.rindex != 1 %}
+      ●
+      {% endif %}
+      {% endfor %}
+    </p>
+  </center>
   {% endif %}
 
   {% if include.img %}
