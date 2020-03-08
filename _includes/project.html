@@ -3,6 +3,8 @@
   {% if include.pitch %}
   <blockquote><p>{{include.pitch}}</p></blockquote>
   {% endif %}
+
+  {% if include.description %}
   <p>
     {% assign broken_descript = {{include.description}} | split: "=| " %}
 
@@ -14,6 +16,7 @@
     {% endif %}
     {% endfor %}
   </p>
+  {% endif %}
 
   {% if include.links %}
   <center>
