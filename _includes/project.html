@@ -37,4 +37,8 @@
   {% if include.img %}
   {% include figure.html image=include.img alt="Image with just alt text" %}
   {% endif %}
+
+  {% if include.video %}
+  {% include video.html id=include.video %}
+  {% endif %}
 </details>
