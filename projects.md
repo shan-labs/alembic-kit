@@ -27,6 +27,7 @@ title: Projects
     sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
     "
     img=false
+    links=false
 %}
 <hr>
 {%
@@ -39,6 +40,7 @@ title: Projects
     sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
     "
     img="https://cdn.pixabay.com/photo/2019/11/08/11/56/cat-4611189__340.jpg"
+    links="Github, https://github.com/kkhan01/project_angstrom; Live, http://angstrom.stuycs.org/"
 %}
 <hr>
 {%
@@ -51,4 +53,5 @@ title: Projects
     sagittis. Etiam ullamcorper dignissim dui, at lobortis purus viverra ornare.
     "
     img=false
+    links=false
 %}
