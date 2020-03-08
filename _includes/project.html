@@ -1,0 +1,9 @@
+<details>
+  <summary><h3>{{ include.title | default: Project }}</h3></summary>
+  <p>
+    {{ include.description | default: Description }}
+  </p>
+  {% if include.img %}
+  {% include figure.html image=include.img alt="Image with just alt text" %}
+  {% endif %}
+</details>
