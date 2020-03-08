@@ -7,6 +7,7 @@ title: Projects
  h3 {
    display:inline;
  }
+
  details summary::-webkit-details-marker {
    background: url(/assets/imgs/works/yay.gif) center no-repeat;
    color: transparent;
@@ -14,6 +15,13 @@ title: Projects
  details[open] summary::-webkit-details-marker {
    background: url(/assets/imgs/works/karenblush.gif) center no-repeat;
    color: transparent;
+ }
+
+ details summary {
+   list-style-image: url(/assets/imgs/works/yay.gif);
+ }
+ details[open] summary {
+   list-style-image: url(/assets/imgs/works/karenblush.gif);
  }
 </style>
 

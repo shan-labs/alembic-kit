@@ -30,7 +30,7 @@ body {
 
 article,
 aside,
-details, /* 1 */
+// details, /* 1 */
 figcaption,
 figure,
 footer,
@@ -39,7 +39,8 @@ main, /* 2 */
 menu,
 nav,
 section,
-summary { /* 1 */
+// summary /* 1 */
+{
   display: block;
 }
 
