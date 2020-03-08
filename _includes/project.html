@@ -1,0 +1,44 @@
+<details>
+  <summary><h3>{{ include.title | default: Project }}</h3></summary>
+  {% if include.pitch %}
+  <blockquote><p>{{include.pitch}}</p></blockquote>
+  {% endif %}
+
+  {% if include.description %}
+  <p>
+    {% assign broken_descript = {{include.description}} | split: "=| " %}
+
+    {% for item in broken_descript %}
+    {% if forloop.first %}
+    {{ item }}
+    {% else %}
+    <li>{{ item }}</li>
+    {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  {% if include.links %}
+  <center>
+    <p>
+      {% assign links = {{include.links}} | split: "; " %}
+
+      {% for item in links %}
+      {% assign destructured = item | split: ", " %}
+      <a href="{{ destructured[1] }}">{{ destructured[0] }}</a>
+      {% if forloop.rindex != 1 %}
+      ●
+      {% endif %}
+      {% endfor %}
+    </p>
+  </center>
+  {% endif %}
+
+  {% if include.img %}
+  {% include figure.html image=include.img alt="Image with just alt text" %}
+  {% endif %}
+
+  {% if include.video %}
+  {% include video.html id=include.video %}
+  {% endif %}
+</details>
