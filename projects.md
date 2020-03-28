@@ -37,7 +37,7 @@ title: Projects
     description="
     [DESCRIPTION WIP]
     "
-    links="Github, https://github.com/kkhan01/nlp-tf-idf-hadoop"
+    links="GitHub, https://github.com/kkhan01/nlp-tf-idf-hadoop"
     img=false
 %}
 <hr>
@@ -49,7 +49,7 @@ title: Projects
     A big data project leveraging document based (<b>MongoDB</b>) and graph based (<b>Neo4j</b>) databases
     =| Populate and query databases for relationships between compounds and diseases [relationships which aren’t readily available]
     "
-    links="Github, https://github.com/kkhan01/hetio-net"
+    links="GitHub, https://github.com/kkhan01/hetio-net"
     img=false
 %}
 <hr>
@@ -60,7 +60,7 @@ title: Projects
     description="
     [DESCRIPTION WIP]
     "
-    links="Github, https://github.com/kkhan01/Finder"
+    links="GitHub, https://github.com/kkhan01/Finder"
     img=false
 %}
 <hr>
@@ -73,7 +73,7 @@ title: Projects
     =| Scouting site for FIRST Tech Challenge (FTC) use as well as for local teams to use internally
     =| Provides statistical analysis of data from The Orange Alliance to allow for greater insights
     "
-    links="Github, https://github.com/kkhan01/project_angstrom; Live, http://angstrom.stuycs.org/"
+    links="GitHub, https://github.com/kkhan01/project_angstrom; Live, http://angstrom.stuycs.org/"
     img=false
     video="SG_ar4D-uIM"
 %}
@@ -85,7 +85,7 @@ title: Projects
     description="
     [DESCRIPTION WIP]
     "
-    links="Github, https://github.com/kkhan01/This_Name_is_Copyrighted-Brain_Battles; Live"
+    links="GitHub, https://github.com/kkhan01/This_Name_is_Copyrighted-Brain_Battles"
     img=false
     video="RXbPhHFDLuc"
 %}
@@ -97,7 +97,7 @@ title: Projects
     description="
     [DESCRIPTION WIP]
     "
-    links=false
+    links="GitHub, https://github.com/kkhan01/Polybius"
     img=false
 %}
 <hr>
