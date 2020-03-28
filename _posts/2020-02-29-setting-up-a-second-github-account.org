@@ -1,6 +1,6 @@
 #+TITLE: Setting up a Second GitHub Account
 #+layout: post
-#+categories: github ssh
+#+categories: github emails ssh
 #+liquid: enabled
 #+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
 #+comments: true
@@ -11,27 +11,39 @@ Decided to make a small blog about something I did recently: set up a second Git
     - [[#preface--why][Preface & Why]]
     - [[#make-a-github-account][Make a GitHub Account]]
     - [[#ssh-keys][SSH Keys]]
-    - [[#setting-up-smart-ssh-pairs][Setting up Smart SSH Pairs]]
+    - [[#setting-up-dynamic-config][Setting up "Dynamic Config"]]
     - [[#end-note][End Note]]
 
 *** Preface & Why
     I thought it might be a good idea to include a preface for this guide. It isn't meant for everyone and their moms, it's meant for devs who need a
     second GitHub account. There could be a multitude of reasons as to why you may need one. They may include having a personal one and one for work/
     school, too shy to let your name out when making PRs/ issues, perhaps participating in events like [[https://adventofcode.com/][Advent of Code]]/ [[https://www.hackerrank.com/][HackerRank]]/ [[https://www.codewars.com/][Codewars]] and not
-    wanting your personal information to be shown on a discord server you're playing with (something along those lines...), etcetera etcetera. Mine is
-    that I wanted to test some GitHub features which I couldn't do with just one account... thought I'm kind of invested in the name now :stuck_out_tongue:
+    wanting your personal information to be shown on a discord server you're playing with (something along those lines...), etcetera etcetera.
+
+    Of course, the recommended way is to just use the same GitHub account and different emails in your commits. I needed this specifically for my
+    company. I have to commit with an email =khinshan.khan@company.com=, so that was my focus. Bbbut, I realized you could also set up ssh stuff and
+    a whole new second account. I really meant to document what I had to do for myself, but might as well write a post with all the information.
 
     It /is/ worth noting that GitHub's ToS has the following lines:
     #+begin_quote
     One person or legal entity may maintain no more than one free Account (if you choose to control a machine account as well, that's fine, but it can
     only be used for running a machine).
     #+end_quote
-    Not sure how much they care about this, but my personal is actually not a free account, so I don't consider myself breaking the ToS... but at the
-    same time I'd rather let that disclaimer sit there just in case. It's better to make [[https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations][GitHub organizations]] perhaps, but it wouldn't really solve
-    my issue at hand, nor a lot people's... so tread with caution is all I can say.
+
+    Not sure how much they care about this, but my personal is actually not a free account, so I don't consider myself breaking the ToS if I did...
+    but at the same time I'd rather let that disclaimer sit there just in case. Again! Multiple emails on a singular account is fine and I'd rather
+    you did that. But maybe (hopefully!) you're working GitHub/ got their permission for a second account. They do let you have a machine account, so
+    maybe you're using that... Anywho, this post is just information you can probably pierce together from other people's blog posts, but it's good to
+    just have a solid reference sometimes.
+
+
+    Also better to make [[https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations][GitHub organizations]] perhaps, but it wouldn't really solve my issue at hand, nor a lot people's... so tread with caution is all
+    I can say.
+
 *** Make a GitHub Account
     Simple enough, navigate over to [[https://github.com/join?source=login][GitHub's signup page]] and sign up for your accounts. Note: as of writing this post and to my knowledge, you can't
     be logged into multiple accounts at once. Easily solved with different browsers, or utilizing incognito.
+
 *** SSH Keys
     These steps should be ran per account on your computer. I think you just need =ssh= for this, but it'd be a good idea to have =git= installed too. For
     step =2=, for your second account, do /not/ leave the default name. I like the idea of naming it =~/.ssh/USERNAME=, replacing =USERNAME= with the GitHub
@@ -60,7 +72,8 @@ Decided to make a small blog about something I did recently: set up a second Git
     10. Title it whatever like home or something and paste the contents from before into key section and confirm
     11. You should be done. Try running =ssh -T git@github.com= from command line and you'll receive a success message of sorts (if your username is right, you did it right).
         1. A warning might pop up the first time, just say yes and it'll work fine
-*** Setting up Smart SSH Pairs
+
+*** Setting up "Dynamic Config"
     Now, if you'll notice, whenever using ssh clone or something, git tried to use your default account! Yes, this is to be expected. Let's fix it!
     For the sake of not doxxing my invested name just yet... let's say my second account's name is =second=.
 
