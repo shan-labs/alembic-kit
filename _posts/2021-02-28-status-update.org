@@ -1,0 +1,101 @@
+#+TITLE: Status Update
+#+layout: post
+#+categories: apology explanation
+#+liquid: enabled
+#+feature_image: https://images.unsplash.com/photo-1514625796505-dba9ebaf5816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+#+comments: true
+
+Close watchers of the blog may have noticed there hasn't been a post in quite a while. Others may be
+exclaiming "what?". Both perspectives are grounded in what happened and what will happen. Hence, a status update post
+was called for :raised_hands:. Kind of turned into a lengthy ramble though, yikes :innocent:.
+
+*** Table of Contents :TOC_7:
+    - [[#the-sitch][The Sitch]]
+    - [[#the-things-i-need-to-point-out][The Things I need to Point Out]]
+    - [[#topics][Topics]]
+    - [[#why-change-what-works][Why change what works?]]
+    - [[#sneaking-in-the-good-stuff][Sneaking in the Good Stuff]]
+    - [[#so-the-plan][So the Plan?]]
+    - [[#end-note][End Note]]
+
+*** The Sitch
+    If you haven't been living under a rock, you've probably noticed the world has been in a weird stasis for the past
+    year due to a certain pandemic :eyes:.
+
+    This particular pandemic had quite a number of side effects. Needless to mention the causalities, the pandemic
+    brought about different effects -- effects you'd only read about in books. Rather than being something that the
+    community should group together to fight, it's caused paranoia and stress :pensive:. But I think the really messed
+    up thing about it is that it sometimes has you feeling burned out, even on a good day. And that's really just the
+    sum of it: I feel burned out :confounded:.
+
+    There have been many ups and downs: some professors assigning literally an 800 page book with a 3 day deadline
+    versus others realizing we're still human and suffering and showing leniency. I've been juggling loads of parallel
+    projects, communities, and responsibility. I also got an internship right before the pandemic and still going strong
+    there :muscle:. Absolutely lovely company and folks there :heart_eyes:.
+
+    I do hope to get back into blogging, but there are a few things I realized I need to point out clearly :innocent:.
+
+*** The Things I need to Point Out
+    Bit of a tldr:
+
+    1. I think the first of many is /topics/ for posts. I do more breadth then (yes then, not than) depth work and
+       research. My posts should be the same.
+    2. In general, I definitely need to redo my website and blog and everything in between.
+    3. I've been active, just not here -> sync time!
+    4. The future of the blog is in the air, but it'll definitely continue to exist in one form or another.
+
+*** Topics
+    I can't keep blogging about OSS news nor a recent PR. Half the time, I'm not fully sure what's under NDA and what's
+    okay to share. There is a work document on IP that I could always read as well as just asking my supervisor I
+    suppose, cool guy :eyes:.
+
+    I want to diversify my blog. I've recently been getting into cooking, tea, and board games. Some UI/ UX and
+    philosophy/ methodology/ ideology as well. Should be fun to read about :smirk:.
+
+*** Why change what works?
+    Yep, after migrating so many times, I'm thinking of migrating again. This should be the last time. I want to make
+    the website more accessible as well as a more comfortable tech stack. Jekyll has been /a gem/, but I've had a few
+    people complain about various things: webgl is consuming, I need more accessibility tags (definitely looking into a
+    clean setup to automate this), can't see changes to posts, disqus isn't great, etcetera etcetera.
+
+    I've been architecting something with everything in mind, but as it sound: it's hard! A lot of layers of
+    complexities involved. I want a setup that's easy to use for me (org mode posts, as flexible as possible) /and/ for
+    everyone.
+
+    I plan on naming the repository =anchorage= to keep me anchored... hopefully :blush:. More on this in another post!
+
+*** Sneaking in the Good Stuff
+    While redoing my website, I plan on redoing the theme, iconography, typography... everything! But it'll take quite a
+    bit of time. So, I'm going to stick with this site on Netlify while I develop the other and sporadically blog about
+    it. Syncing posts is probably going to be a huge, but it's whatever.
+
+*** So the Plan?
+    Time for the future. I have a bunch of ideas in mind, but I'm a huge fan of bite sized deliveries every so often,
+    and I think that's the key to my content.
+
+    As I explore new topics, I'll probably create an intro post to the topic, eg if I start blogging about [[https://adventofcode.com/][Advent of
+    Code]], I'll make a short post about what it is, my general approach to it for the following posts (will I attempt a
+    run through with Golang? MPI?), and what tags I'll be using.
+
+    Speaking of tags, my current categories are an absolute mess :sweat_smile:. So I plan on going through my posts and
+    refining the tags and perhaps editing a little as well... I should definitely at least run a spell and grammar
+    checker on them. So it'll likely be some rephrasing, fixing broken emoji/ links, sprinkling in a few words and
+    pictures. Also some more emoji and line breaks, because bite sized is best sized :pray:.
+
+    I'm okay with editing as a concept, after all everyone makes mistakes and revision is great for writing, but I hate
+    how it feels like I'm hiding something. I prefer having transparency. I hope my next blog says when a post was
+    published as well as last edited with a link to the edit history (since it's all on open source with version
+    control). Honesty's the best policy, hence this post too :relieved:.
+
+    As for the "future readers questioning this post" point, I plan on pushing old posts I made as well as syncing posts
+    from quite a number of sources I've been writing to. Might even turn some messages into posts since they were so
+    lengthy and contentful. It might be better to have new dates for them, but I plan to preserve a lot of the dates
+    until I migrate my blog, because it's just easier for content that's essentially being synced. That said, some might
+    be worth revising enough to have a new date. Once I migrate, there won't be any of this weird syncing, if I have to
+    write to another medium, I'll do my best to have it up as a post within the week or so :pray:.
+
+*** End Note
+    Welp, probably not like many people read posts like this anyways. Thanks for reading if you did. The plan isn't set
+    in stone, so feel free to contact me with suggestions and ideas if you'd like.
+
+    Cheers!
