@@ -25,7 +25,7 @@ author: Khinshan Khan # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Khinshan Khan # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://github.com/kkhan01
+    - https://github.com/khinshankhan
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
@@ -89,7 +89,7 @@ favicons:
   1024: '/assets/imgs/works/k_logo.jpeg'
 
 social_links:
-  GitHub: https://github.com/kkhan01
+  GitHub: https://github.com/khinshankhan
   Linkedin: https://linkedin.com/in/khinshankhan
   Discord: https://discordapp.com/users/356260437567995914/
   RSS: /feed.xml
